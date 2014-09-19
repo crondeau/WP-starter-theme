@@ -1,0 +1,20 @@
+#masthead { 
+	background: $grey;
+	padding: 20px 0;
+	
+}
+
+@media screen and (min-width: $phone-landscape) {
+	#masthead { 
+		#branding {
+			float: left;
+			width: 30%;
+		}
+		#site-navigation {
+			float: right;
+			width: 70%;
+		}
+	}	
+}
+
+@import "branding";

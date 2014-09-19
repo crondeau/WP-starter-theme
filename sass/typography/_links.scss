@@ -1,0 +1,22 @@
+a {
+	color: $color__link;
+	@include transition (0.2s, ease-in-out);
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&.more-link {
+		text-decoration: none;
+		&:after {
+			content: "\00bb";
+			padding-left: 5px;
+		}
+	}
+	&.comment-reply-link {
+		@extend .more-link;
+	}
+}

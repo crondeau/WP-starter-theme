@@ -1,0 +1,52 @@
+/* Search Form
+-------------------------------------------*/
+#searchform {
+	position: relative;
+	input {
+		height: 38px;
+		padding: 0;
+		vertical-align: top;
+	}
+	
+	#s {
+		background: $offwhite;
+		border: none;
+		@include border-radius(2px);
+		@include font-size (14px);
+		line-height: 1;
+		padding-right: 56px;
+		padding-left: 10px;
+		@include transition (.07s, ease-in);
+		width: 100%;
+		&:focus {
+			@include transition (.07s, ease-in);
+		}
+	}
+
+	#searchsubmit {
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		
+		background: $color__background-button;
+		border: none;
+		@include border-radius(0);
+		@include border-top-radius(2px);
+		@include border-right-radius(2px);
+		@include border-bottom-radius(2px);
+		@include border-left-radius (2px);
+		color: $white;
+		@include font-size (10px);
+		height: 38px;
+		letter-spacing: 1px;
+		padding: 0 15px;
+		text-transform: uppercase;
+		-webkit-appearance: none;
+		&:hover {
+			background: $color__background-button-hover;
+			cursor: pointer;
+			@include transition (.07s, ease-in);
+		}
+	}
+}

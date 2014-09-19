@@ -1,0 +1,55 @@
+.main-navigation {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			background: $white;
+			float: left;
+			position: absolute;
+			left: -999em;
+			z-index: 99999;
+			ul {
+				left: -999em;
+				top: 0;
+			}
+			li {
+				&:hover > ul {
+					left: 100%;
+				}
+			}
+			a {
+				color: $color__text-main;
+				width: 200px;
+				&:hover {
+					background: $color__link;
+					color: $white;
+				}
+			}
+		}
+		li:hover > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+	}
+	a {
+		color: $white;
+		display: block;
+		padding: 5px 15px;
+		text-decoration: none;
+		&:hover {
+			color: $color__link;
+		}
+	}
+	.current_page_item > a,
+	.current-menu-item > a {
+		color: $color__link;
+	}
+}
+
+
+

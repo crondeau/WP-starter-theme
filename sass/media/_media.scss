@@ -1,0 +1,18 @@
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* images within main page */
+#main img {
+	height: auto;
+	max-width: 100%;
+}
+
+@import "alignments";
+
+@import "captions";
+
+@import "galleries";

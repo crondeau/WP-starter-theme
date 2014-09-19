@@ -1,0 +1,13 @@
+#branding {
+	#logo a {
+		background: url("../images/logo.png") no-repeat;
+		@include image-2x("../images/logo2x.png", 200px, 50px);
+		display: block;
+		height: 50px;
+		text-indent: -9999px;
+		width: 200px;
+	}
+	#tagline {
+		display: none;
+	}
+}

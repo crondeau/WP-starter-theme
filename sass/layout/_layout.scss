@@ -1,0 +1,38 @@
+/* Main Layout
+---------------------------*/
+.row {
+	width: 100%;
+}
+.container {
+	@include center-block;
+	@include clearfix;	
+	width: 100%;
+	max-width: 1200px;
+}
+
+#main {
+	padding: 30px 5%;
+}
+
+#fourofour {
+	@include center-block;
+	padding-top: 50px;
+	padding-bottom: 150px;
+}
+
+@media screen and (min-width: $phone-wide-landscape) {
+	#content {
+		float: left;
+		width: 65%;
+	}
+	#sidebar {
+		float: right;
+		width: 25%;
+	}
+	#fourofour {
+		width: 50%;
+	}
+}
+
+
+

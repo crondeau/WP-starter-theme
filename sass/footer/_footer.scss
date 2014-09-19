@@ -1,0 +1,19 @@
+/* Footer area 
+---------------------*/
+#footer {
+	background: $offwhite;
+	text-align: center;
+	p {
+		color: $grey;
+		@include font-size(12px);
+		padding: 0.625em;
+	}	
+	a {
+		color: $light-grey;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+

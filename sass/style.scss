@@ -1,0 +1,77 @@
+// Colours
+$black: #252525;
+$white: #fff;
+$offwhite: #f0f1f1;
+$grey: #5C6772;
+$light-grey: #b3b3b3;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #33B26E;
+$color__background-button-hover: #5C6772;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #33B26E;
+$color__link-visited: #066;
+$color__link-hover: #CC8B14;
+$color__text-main: #404040;
+$color__heading: #474747;
+
+$color__border-button: #ccc;
+$color__border-button-hover: #999;
+$color__border-button-focus: #aaa;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+
+// FONT FAMILY
+$font__sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font__serif: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+// Media queries
+$desktop-wide:          75.00em;  // 1200px
+$desktop-small:         64.00em;  // 1024px
+$tablet-portrait:       48.00em;  // 768px
+$phone-wide-landscape:  35.50em;  // 568px
+$phone-landscape:       30.00em;  // 480px
+$phone-portrait:        20.00em;  // 320px
+
+$max-width: 1200px;
+
+@import "_mixins";
+
+@import "_reset";
+
+@import "_accessibility";
+
+@import "typography/typography";
+
+@import "elements/elements";
+
+@import "layout/layout";
+
+@import "header/header";
+
+@import "navigation/navigation";
+
+@import "blog/blog";
+
+@import "sidebar/sidebar";
+
+@import "footer/footer";
+
+@import "forms/forms";
+
+@import "media/media";
+
+@import "_mediaqueries";

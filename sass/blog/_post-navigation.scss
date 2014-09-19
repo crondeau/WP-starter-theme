@@ -1,0 +1,25 @@
+.post-navigation {
+	@include font-size(15px);
+	padding: 2em 0;
+	a {
+		text-decoration: none;
+	}
+	.nav-previous {
+		float: left;
+		width: 50%;
+		a:before {
+			 content:"\00ab";
+			 padding-right: 5px;
+		}
+	}
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+		a:after {
+			 content:"\00bb";
+			 padding-left: 5px;
+		}
+	}
+} 
+
