@@ -7,14 +7,17 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $font__serif;
 	font-weight: 400;
 }
+
 h1 {
 	@include font-size(30px);
 	margin: 0 0 0.625em;
 }
+
 h2, h3, h4, h5, h6 {
 	@include font-size(22px);
 	margin: 0.625em 0;
 }
+
 h2.post-title a {
 	text-decoration: none;
 	&:hover {

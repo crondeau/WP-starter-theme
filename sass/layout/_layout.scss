@@ -14,25 +14,39 @@
 	padding: 30px 5%;
 }
 
+#content {
+	float: left;
+	width: 65%;
+	@media screen and (max-width: $phone-wide-landscape) {
+		width: 100%;
+	}
+}
+#sidebar {
+	float: right;
+	width: 25%;
+	@media screen and (max-width: $phone-wide-landscape) {
+		float: left;
+		width: 100%;
+	}
+}
+
+
+
 #fourofour {
 	@include center-block;
 	padding-top: 50px;
 	padding-bottom: 150px;
+	width: 50%;
+	@media screen and (max-width: $tablet-portrait) {	
+		width: 80%;
+	}
+	@media screen and (max-width: $phone-wide-landscape) {
+		width: 100%;
+	}
+	
 }
 
-@media screen and (min-width: $phone-wide-landscape) {
-	#content {
-		float: left;
-		width: 65%;
-	}
-	#sidebar {
-		float: right;
-		width: 25%;
-	}
-	#fourofour {
-		width: 50%;
-	}
-}
+
 
 
 

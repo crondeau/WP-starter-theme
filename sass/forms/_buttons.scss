@@ -12,23 +12,13 @@ input[type="submit"] {
 	line-height: 1;
 	padding:  10px 15px;
 	text-transform: uppercase;
-}
+	&:hover {
+		background: $color__background-button-hover;
+		border-color: none;
+	}
+	&:focus, 
+	&:active {
+		border-color: $color__border-button-focus;
+	}
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	background: $color__background-button-hover;
-	border-color: none;
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: $color__border-button-focus;
 }

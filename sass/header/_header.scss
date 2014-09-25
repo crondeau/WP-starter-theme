@@ -2,19 +2,22 @@
 	background: $grey;
 	padding: 20px 0;
 	
-}
-
-@media screen and (min-width: $phone-landscape) {
-	#masthead { 
-		#branding {
+	#branding {
+		float: left;
+		width: 30%;
+		@media screen and (max-width: $phone-landscape) {
+			width: 100%;
+		}
+	}
+	
+	#site-navigation {
+		float: right;
+		width: 70%;
+		@media screen and (max-width: $phone-landscape) {
 			float: left;
-			width: 30%;
+			width: 100%;
 		}
-		#site-navigation {
-			float: right;
-			width: 70%;
-		}
-	}	
+	}
 }
 
 @import "branding";
