@@ -6,6 +6,7 @@
  */
 ?>
 
+
 <footer id="footer" class="row">
 	<div class="container">
 

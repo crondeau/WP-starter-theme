@@ -50,29 +50,8 @@ add_action( 'after_setup_theme', 'blm_theme_setup' );
 /**
  * Register widget area
  */
+get_template_part( 'inc/widgets' );
 
-function blm_widgets_init() {
-	register_sidebar( array(
-		'id' => 'primary',
-		'name' => __( 'Blog Sidebar', 'blm_basic' ),
-		'description' => __( 'The following widgets will appear on your blog section.', 'blm_basic' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
-		'after_title' => '</h4>'
-	) );
-		
-	register_sidebar( array(
-		'id' => 'secondary',
-		'name' => __( 'Page Sidebar', 'blm_basic' ),
-		'description' => __( 'The following widgets will appear on your pages.', 'blm_basic' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
-		'after_title' => '</h4>'
-	) );
-}
-add_action( 'widgets_init', 'blm_widgets_init' );
 
 /**
  * Enqueue scripts and styles
