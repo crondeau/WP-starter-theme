@@ -569,30 +569,32 @@ td, th {
   margin: 0.3125em 0;
 }
 
-.post-navigation {
-  font-size: 15px;
-  font-size: 1.5rem;
-  padding: 2em 0;
+/* Post pagination
+----------------------------------------------- */
+.paging-navigation {
+  background: #f0f1f1;
+  padding: 15px;
 }
-.post-navigation a {
+.paging-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.paging-navigation ul li {
+  display: inline;
+}
+.paging-navigation a.page-numbers,
+.paging-navigation span.page-numbers {
+  padding: 3px 8px;
+  color: #5C6772;
   text-decoration: none;
 }
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
+.paging-navigation a.page-numbers:hover,
+.paging-navigation span.page-numbers:hover {
+  color: #252525;
 }
-.post-navigation .nav-previous a:before {
-  content: "\00ab";
-  padding-right: 5px;
-}
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
-}
-.post-navigation .nav-next a:after {
-  content: "\00bb";
-  padding-left: 5px;
+.paging-navigation .current {
+  font-weight: bold;
 }
 
 /* Comments

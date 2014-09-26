@@ -1,0 +1,29 @@
+/* Post pagination
+----------------------------------------------- */
+
+.paging-navigation {
+	background: $offwhite;
+	padding: 15px;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline;
+		}
+	}
+	a.page-numbers,
+	span.page-numbers {
+		padding: 3px 8px;
+		color: $grey;
+		text-decoration: none;
+		&:hover {
+			color: $black;
+		}
+	}
+	.current {
+		font-weight: bold;
+	}
+}
+
+
