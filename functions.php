@@ -48,9 +48,9 @@ add_action( 'after_setup_theme', 'blm_theme_setup' );
 
 
 /**
- * Register widget area
+ * Set up and register widget area
  */
-get_template_part( 'inc/widgets' );
+require get_template_directory() . '/inc/widgets.php';
 
 
 /**
@@ -72,47 +72,19 @@ function blm_basic_scripts() {
 add_action( 'wp_enqueue_scripts', 'blm_basic_scripts' );
 
 
-/**
- * Set up title if SEO plugin is not used
+/* 
+ * Create a nicely formatted and more specific title element text for output
+ * in head of document, based on current view.
  */
-
-function blm_basic_wp_title( $title, $sep ) {
-	global $paged, $page;
-
-	if ( is_feed() )
-		return $title;
-
-	// Add the site name.
-	$title .= get_bloginfo( 'name' );
-
-	// Add the site description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		$title = "$title $sep $site_description";
-
-	// Add a page number if necessary.
-	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'blm_basic' ), max( $paged, $page ) );
-
-	return $title;
-}
-add_filter( 'wp_title', 'blm_basic_wp_title', 10, 2 );
+require get_template_directory() . '/inc/seo-titles.php';
 
 
-// Remove ellipses from excerpt
-
-function blm_custom_excerpt_more($more) {
-	return '<br /><a href="'. get_permalink() .'" class="more-link">Read more</a>';
-	}
-add_filter('excerpt_more', 'blm_custom_excerpt_more');
+// Custom post navigation for theme.
+require get_template_directory() . '/inc/page-navi.php';
 
 
-//Modify the excerpt length
-
-function blm_custom_excerpt_length($length) {
-	return 50;
-	}
-add_filter('excerpt_length', 'blm_custom_excerpt_length');
+// Modify the read more link.
+require get_template_directory() . '/inc/excerpts.php';
 
 
 // remove junk from head
