@@ -7,11 +7,11 @@
 	@include center-block;
 	@include clearfix;	
 	width: 100%;
-	max-width: 1200px;
+	max-width: $max-width;
 }
 
 #main {
-	padding: 30px 5%;
+	padding: 30px 0;
 }
 
 #content {
@@ -30,8 +30,6 @@
 	}
 }
 
-
-
 #fourofour {
 	@include center-block;
 	padding-top: 50px;
@@ -45,8 +43,3 @@
 	}
 	
 }
-
-
-
-
-
