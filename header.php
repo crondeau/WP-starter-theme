@@ -42,7 +42,7 @@
 		</div>
 		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
+			<h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'blm_basic' ); ?></a></h1>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>	
 

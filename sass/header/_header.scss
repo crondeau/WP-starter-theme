@@ -5,7 +5,7 @@
 	#branding {
 		float: left;
 		width: 30%;
-		@media screen and (max-width: $phone-landscape) {
+		@media screen and (max-width: $phone-wide-landscape) {
 			width: 100%;
 		}
 	}
@@ -13,10 +13,13 @@
 	#site-navigation {
 		float: right;
 		width: 70%;
-		@media screen and (max-width: $phone-landscape) {
+		@media screen and (max-width: $phone-wide-landscape) {
 			float: left;
 			width: 100%;
 		}
+	}
+	@media screen and (max-width: $phone-wide-landscape) {
+		padding-bottom: 0;
 	}
 }
 
