@@ -33,16 +33,5 @@
 	}
 }
 
-#fourofour {
-	@include center-block;
-	padding-top: 50px;
-	padding-bottom: 150px;
-	width: 50%;
-	@media screen and (max-width: $tablet-portrait) {	
-		width: 80%;
-	}
-	@media screen and (max-width: $phone-wide-landscape) {
-		width: 100%;
-	}
-	
-}
+@import "_404";
+

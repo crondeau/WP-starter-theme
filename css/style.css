@@ -456,7 +456,6 @@ td, th {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  list-style: none;
 }
 .main-navigation ul li {
   position: relative;
@@ -501,7 +500,8 @@ td, th {
   background: #33B26E;
   color: #fff;
 }
-.main-navigation .current_page_ancestor,
+.main-navigation .current_page_parent a,
+.main-navigation .current_page_ancestor a,
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
@@ -644,10 +644,36 @@ td, th {
 }
 .paging-navigation a.page-numbers:hover,
 .paging-navigation span.page-numbers:hover {
-  color: #252525;
+  color: #000;
 }
 .paging-navigation .current {
   font-weight: bold;
+}
+
+.post-navigation {
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding: 2em 0;
+}
+.post-navigation a {
+  text-decoration: none;
+}
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+.post-navigation .nav-previous a:before {
+  content: "\00ab";
+  padding-right: 5px;
+}
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.post-navigation .nav-next a:after {
+  content: "\00bb";
+  padding-left: 5px;
 }
 
 /* Comments

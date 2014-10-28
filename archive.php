@@ -58,7 +58,7 @@ get_header(); ?>
 	
 	 	 	<?php endwhile; endif; ?>
 	
-			<?php get_template_part( 'inc/nav' ); ?>
+			<?php blm_basic_paging_nav(); ?>
 		  
 		</section><!-- #content -->
 
