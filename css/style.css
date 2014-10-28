@@ -625,8 +625,7 @@ td, th {
 /* Post pagination
 ----------------------------------------------- */
 .paging-navigation {
-  background: #f0f1f1;
-  padding: 15px;
+  padding: 15px 0;
 }
 .paging-navigation ul {
   list-style: none;
@@ -646,7 +645,9 @@ td, th {
 .paging-navigation span.page-numbers:hover {
   color: #000;
 }
-.paging-navigation .current {
+.paging-navigation a.page-numbers.current,
+.paging-navigation span.page-numbers.current {
+  color: #33B26E;
   font-weight: bold;
 }
 

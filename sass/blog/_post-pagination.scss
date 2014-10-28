@@ -1,9 +1,7 @@
 /* Post pagination
 ----------------------------------------------- */
-
 .paging-navigation {
-	background: $offwhite;
-	padding: 15px;
+	padding: 15px 0;
 	ul {
 		list-style: none;
 		margin: 0;
@@ -20,9 +18,10 @@
 		&:hover {
 			color: $black;
 		}
-	}
-	.current {
-		font-weight: bold;
+		&.current {
+			color: $color__link;
+			font-weight: bold;
+		}
 	}
 }
 
