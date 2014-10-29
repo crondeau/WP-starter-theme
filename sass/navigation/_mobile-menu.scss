@@ -6,7 +6,6 @@
 @media screen and (max-width: $phone-landscape) {
     .menu-toggle {
 		background: $color__text-main;
-		@include border-radius(0);
 		color: $white;
         display: inline-block;
 		font-family: $font__sans;
@@ -44,7 +43,7 @@
 				float: none;
 				a {
 					background: $color__text-main;
-					color: white;
+					color: $white;
 					padding: 10px 20px;
 
 					&:hover{

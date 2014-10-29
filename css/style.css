@@ -525,10 +525,6 @@ td, th {
 @media screen and (max-width: 30em) {
   .menu-toggle {
     background: #404040;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */
     color: #fff;
     display: inline-block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -569,7 +565,7 @@ td, th {
   }
   .main-navigation ul li a {
     background: #404040;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
   }
   .main-navigation ul li a:hover {
