@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Archive pages.
+ * The template for displaying archive and category pages.
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -50,7 +50,7 @@ get_header(); ?>
 			
 	    		<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	
-		 		<?php the_content( __( 'Read more', 'blm_basic' ) );?>
+		 		<?php the_content( 'Read more' );?>
 				
 				<?php get_template_part( 'inc/meta' ); ?>
 			
