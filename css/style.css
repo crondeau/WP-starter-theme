@@ -704,6 +704,7 @@ td, th {
   margin: 0;
 }
 #commentlist li p {
+  margin: 0;
   padding: 0.625em 0;
 }
 #commentlist li li > li {
