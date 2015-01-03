@@ -1,6 +1,7 @@
 /* Search Form
 -------------------------------------------*/
 #searchform {
+	max-width: 400px;
 	position: relative;
 	input {
 		height: 38px;
@@ -28,7 +29,6 @@
 		z-index: 10;
 		right: 0;
 		top: 0;
-		
 		background: $color__background-button;
 		border: none;
 		@include border-radius(0);

@@ -939,6 +939,7 @@ textarea {
 /* Search Form
 -------------------------------------------*/
 #searchform {
+  max-width: 400px;
   position: relative;
 }
 #searchform input {
