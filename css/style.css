@@ -1041,6 +1041,16 @@ object {
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 30em) {
+  .alignleft,
+  .alignright {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
 .wp-caption {
   background: #fff;
   border-color: #b3b3b3;
