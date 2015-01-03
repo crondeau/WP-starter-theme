@@ -2,8 +2,6 @@
 /**
  * The template for displaying archive and category pages.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
  * @package blm_basic
  */
 
