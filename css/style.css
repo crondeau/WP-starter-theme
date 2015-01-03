@@ -267,13 +267,19 @@ blockquote {
   color: #404040;
   font-style: italic;
   font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
-  margin: 0.625em 0;
-  padding: 0.625em;
+  margin: 0.5em 0;
+  padding: 0.5em 1em 0;
 }
 blockquote p {
   font-size: 22px;
   font-size: 2.2rem;
-  margin-bottom: 0;
+  margin-bottom: 0.75em;
+}
+@media screen and (max-width: 30em) {
+  blockquote p {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
 }
 
 hr {

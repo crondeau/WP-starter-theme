@@ -2,10 +2,13 @@ blockquote {
 	color: $color__text-main;
 	font-style: italic;
 	font-family: $font__serif; 
-	margin: 0.625em 0;
-	padding: 0.625em;
+	margin: 0.5em 0;
+	padding: 0.5em 1em 0;
 	p {
 		@include font-size(22px);
-		margin-bottom: 0;
+		margin-bottom: 0.75em;
+		@media screen and (max-width: $phone-landscape) {
+			@include font-size(18px);
+		}
 	}
 }
