@@ -84,14 +84,11 @@ add_action( 'wp_enqueue_scripts', 'blm_basic_scripts' );
  */
 require get_template_directory() . '/inc/seo-titles.php';
 
-
 // Custom post navigation for theme.
 require get_template_directory() . '/inc/page-navi.php';
 
-
 // Modify the read more link.
 require get_template_directory() . '/inc/excerpts.php';
-
 
 // remove junk from head
 remove_action('wp_head', 'rsd_link');
