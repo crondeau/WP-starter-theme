@@ -820,7 +820,7 @@ select {
   max-width: 100%;
 }
 
-button,
+.button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -833,29 +833,35 @@ input[type="submit"] {
   color: #fff;
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  -webkit-appearance: button;
-  /* Corrects inability to style clickable 'input' types in iOS */
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1;
   padding: 10px 15px;
   text-transform: uppercase;
 }
-button:hover,
+.button:hover, button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background: #5C6772;
   border-color: none;
 }
-button:focus, button:active,
+.button:focus, button:focus,
 input[type="button"]:focus,
-input[type="button"]:active,
 input[type="reset"]:focus,
+input[type="submit"]:focus, .button:active, button:active,
+input[type="button"]:active,
 input[type="reset"]:active,
-input[type="submit"]:focus,
 input[type="submit"]:active {
   border-color: #aaa;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
 }
 
 input[type="checkbox"],
