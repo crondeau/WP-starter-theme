@@ -86,12 +86,6 @@ function blm_basic_scripts() {
 add_action( 'wp_enqueue_scripts', 'blm_basic_scripts' );
 
 
-/* 
- * Create a nicely formatted and more specific title element text for output
- * in head of document, based on current view.
- */
-require get_template_directory() . '/inc/seo-titles.php';
-
 // Custom post navigation for theme.
 require get_template_directory() . '/inc/page-navi.php';
 
