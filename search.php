@@ -12,7 +12,7 @@ get_header(); ?>
 	
 		<section id="content">
 		
-			<h1>Search results</h1>
+			<h1 class="page-title">Search results</h1>
 		
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
