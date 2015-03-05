@@ -11,25 +11,25 @@
 }
 
 #main {
-	padding: 30px 0;
-	@media screen and (max-width: $max-width) {
-		padding: 30px 2%;
+	padding: 30px 2%;
+	@media screen and (min-width: $max-width) {
+		padding: 30px 0;
 	}
 }
 
 #content {
 	float: left;
-	width: 65%;
-	@media screen and (max-width: $phone-wide-landscape) {
-		width: 100%;
+	width: 100%;	
+	@media screen and (min-width: $phone-wide-landscape) {
+		width: 65%;
 	}
 }
 #sidebar {
-	float: right;
-	width: 25%;
-	@media screen and (max-width: $phone-wide-landscape) {
-		float: left;
-		width: 100%;
+	float: left;
+	width: 100%;	
+	@media screen and (min-width: $phone-wide-landscape) {
+		float: right;
+		width: 25%;
 	}
 }
 

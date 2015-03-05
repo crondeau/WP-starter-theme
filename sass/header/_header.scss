@@ -1,25 +1,25 @@
 #masthead { 
 	background: $grey;
-	padding: 20px 0;
+	padding-top: 2%;
+	@media screen and (min-width: $phone-wide-landscape) {
+		padding: 20px 0;
+	}
 	
 	#branding {
 		float: left;
-		width: 30%;
-		@media screen and (max-width: $phone-wide-landscape) {
-			width: 100%;
+		width: 100%;
+		@media screen and (min-width: $phone-wide-landscape) {
+			width: 30%;
 		}
 	}
 	
 	#site-navigation {
-		float: right;
-		width: 70%;
-		@media screen and (max-width: $phone-wide-landscape) {
-			float: left;
-			width: 100%;
+		float: left;
+		width: 100%;		
+		@media screen and (min-width: $phone-wide-landscape) {
+			float: right;
+			width: 70%;
 		}
-	}
-	@media screen and (max-width: $phone-wide-landscape) {
-		padding-bottom: 0;
 	}
 }
 

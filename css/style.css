@@ -360,32 +360,32 @@ td, th {
 }
 
 #main {
-  padding: 30px 0;
+  padding: 30px 2%;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   #main {
-    padding: 30px 2%;
+    padding: 30px 0;
   }
 }
 
 #content {
   float: left;
-  width: 65%;
+  width: 100%;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
   #content {
-    width: 100%;
+    width: 65%;
   }
 }
 
 #sidebar {
-  float: right;
-  width: 25%;
+  float: left;
+  width: 100%;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
   #sidebar {
-    float: left;
-    width: 100%;
+    float: right;
+    width: 25%;
   }
 }
 
@@ -394,45 +394,45 @@ td, th {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 150px;
-  width: 50%;
+  width: 100%;
 }
-@media screen and (max-width: 48em) {
+@media screen and (min-width: 37.5em) {
   #fourofour {
     width: 80%;
   }
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 48em) {
   #fourofour {
-    width: 100%;
+    width: 50%;
   }
 }
 
 #masthead {
   background: #5C6772;
-  padding: 20px 0;
+  padding-top: 2%;
+}
+@media screen and (min-width: 37.5em) {
+  #masthead {
+    padding: 20px 0;
+  }
 }
 #masthead #branding {
   float: left;
-  width: 30%;
+  width: 100%;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
   #masthead #branding {
-    width: 100%;
+    width: 30%;
   }
 }
 #masthead #site-navigation {
-  float: right;
-  width: 70%;
+  float: left;
+  width: 100%;
 }
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
   #masthead #site-navigation {
-    float: left;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 37.5em) {
-  #masthead {
-    padding-bottom: 0;
+    float: right;
+    width: 70%;
   }
 }
 
@@ -528,7 +528,7 @@ td, th {
   cursor: pointer;
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 37.5em) {
   .menu-toggle {
     background: #404040;
     color: #fff;
@@ -557,7 +557,8 @@ td, th {
     font-size: 1.6rem;
     margin-right: 10px;
   }
-
+}
+@media screen and (max-width: 37.5em) {
   .main-navigation.toggled .nav-menu {
     display: block;
   }
@@ -1032,33 +1033,26 @@ object {
   max-width: 100%;
 }
 
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em;
-}
-
+.aligncenter,
+.alignleft,
 .alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em;
-}
-
-.aligncenter {
   display: block;
   margin: 0 auto;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-@media screen and (max-width: 30em) {
-  .alignleft,
+@media screen and (min-width: 30em) {
+  .alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+  }
+
   .alignright {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
   }
 }
 .wp-caption {
@@ -1144,32 +1138,4 @@ object {
 .gallery-columns-8 .gallery-caption,
 .gallery-columns-9 .gallery-caption {
   display: none;
-}
-
-/* Media Print
--------------------------------------- */
-@media print {
-  h1 {
-    page-break-before: always;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after: avoid;
-  }
-
-  ul, ol, dl {
-    page-break-before: avoid;
-  }
-}
-/* Media Queries
-------------------------------------- */
-@media screen and (max-width: 48em) {
-  .hide-on-medium {
-    display: none;
-  }
-}
-@media screen and (max-width: 30em) {
-  .hide-on-small {
-    display: none;
-  }
 }
