@@ -46,7 +46,7 @@
 	<div class="container">	
 		
 		<div id="branding">
-			<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 id="tagline"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 		
