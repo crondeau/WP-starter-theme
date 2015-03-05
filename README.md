@@ -3,7 +3,7 @@ WP-starter-theme
 
 A lightweight WordPress Development Theme for custom website development (very loosely) based on _s.
 
-Underscores is a fantastic starter theme for submitting themes to the repo, but I find it a bit bloated for client work. 
+Underscores is a fantastic starter theme for submitting themes to the WP.org repo, but I find it a bit bloated for client work. 
 
 This starter theme doesn't have any bells and whistle and is super simple.
 
