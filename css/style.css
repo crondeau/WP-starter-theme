@@ -780,11 +780,7 @@ td, th {
   font-size: 1.4rem;
 }
 #sidebar a {
-  color: #5C6772;
   text-decoration: none;
-}
-#sidebar a:hover {
-  color: #CC8B14;
 }
 
 .widget_search label {
