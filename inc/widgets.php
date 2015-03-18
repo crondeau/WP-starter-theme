@@ -7,7 +7,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear on your blog section.', 'blm_basic' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="sidebar-title">',
 		'after_title' => '</h4>'
 	) );
 		
@@ -19,7 +19,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear on your pages.', 'blm_basic' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="sidebar-title">',
 		'after_title' => '</h4>'
 	) );
 		
@@ -29,7 +29,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear in the first footer widget area.', 'blm_basic' ),
 		'before_widget' => '<aside id="first" class="widget-area">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
 	) );
 		
@@ -39,7 +39,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear in the second footer widget area.', 'blm_basic' ),
 		'before_widget' => '<aside id="second" class="widget-area">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
 	) );
 	register_sidebar( array(
@@ -48,7 +48,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear in the third footer widget area.', 'blm_basic' ),
 		'before_widget' => '<aside id="third" class="widget-area">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
 	) );
 		
@@ -58,7 +58,7 @@ function blm_widgets_init() {
 		'description' => __( 'The following widgets will appear in the fourth footer widget area.', 'blm_basic' ),
 		'before_widget' => '<aside id="fourth" class="widget-area">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h4>',
+		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
 	) ); */
 }

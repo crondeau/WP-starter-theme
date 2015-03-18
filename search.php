@@ -10,7 +10,7 @@ get_header(); ?>
 <main id="main" class="site-main row" role="main">
 	<div class="container">
 	
-		<section id="content">
+		<section id="content" class="primary-content">
 		
 			<h1 class="page-title">Search results</h1>
 		

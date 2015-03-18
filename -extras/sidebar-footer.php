@@ -21,7 +21,7 @@
 		return;
 	// If we get this far, we have widgets. Let do this.
 ?>
-<div id="footer-widget-area" class="row">
+<div id="footer-widget-area" class="footer-sidebar row">
 		<div class="container" role="complementary">
 
 			<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>

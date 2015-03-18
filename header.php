@@ -45,12 +45,12 @@
 <header id="masthead" class="site-header row" role="banner">	
 	<div class="container">	
 		
-		<div id="branding">
-			<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="tagline"><?php bloginfo( 'description' ); ?></h2>
+		<div id="branding" class="site-branding">
+			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 		
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
 			<h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'blm_basic' ); ?></a></h1>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav>	

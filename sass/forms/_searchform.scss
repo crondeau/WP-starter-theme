@@ -1,44 +1,37 @@
 /* Search Form
 -------------------------------------------*/
-#searchform {
-	max-width: 400px;
+.search-form {
 	position: relative;
+	max-width: 400px;
+	
 	input {
 		height: 38px;
-		padding: 0;
+		padding: 0 5px;
 		vertical-align: top;
 	}
 	
-	#s {
+	.search-field {
 		background: $offwhite;
 		border: none;
-		@include border-radius(2px);
 		@include font-size (14px);
 		line-height: 1;
-		padding-right: 56px;
-		padding-left: 10px;
 		@include transition (.07s, ease-in);
+		position: relative;
 		width: 100%;
 		&:focus {
 			@include transition (.07s, ease-in);
 		}
 	}
 
-	#searchsubmit {
+	.search-submit {
 		position: absolute;
 		z-index: 10;
-		right: 0;
+		right: -10px;
 		top: 0;
 		background: $color__background-button;
 		border: none;
-		@include border-radius(0);
-		@include border-top-radius(2px);
-		@include border-right-radius(2px);
-		@include border-bottom-radius(2px);
-		@include border-left-radius (2px);
 		color: $white;
 		@include font-size (10px);
-		height: 38px;
 		letter-spacing: 1px;
 		padding: 0 15px;
 		text-transform: uppercase;

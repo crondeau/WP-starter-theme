@@ -5,14 +5,10 @@
  * @package blm_basic
  */
 ?>
-<section id="sidebar">
+<section id="sidebar" class="secondary-sidebar page-widgets" role="complementary">
 	
 	<?php if ( ! dynamic_sidebar( 'secondary' ) ) : ?>
 
-		<aside id="search" class="widget widget_search">
-			<?php get_search_form(); ?>
-		</aside>	
-		
 	<?php endif; ?>
 	
 </section>

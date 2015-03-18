@@ -10,21 +10,21 @@
 	max-width: $max-width;
 }
 
-#main {
+.site-main {
 	padding: 30px 2%;
 	@media screen and (min-width: $max-width) {
 		padding: 30px 0;
 	}
 }
 
-#content {
+.primary-content {
 	float: left;
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
 		width: 65%;
 	}
 }
-#sidebar {
+.primary-sidebar {
 	float: left;
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {

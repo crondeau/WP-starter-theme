@@ -7,10 +7,10 @@
 ?>
 
 
-<footer id="footer" class="row">
+<footer id="footer" class="footer-area row">
 	<div class="container">
 
-		<p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+		<p class="small-text">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
 
 	</div>
 </footer>

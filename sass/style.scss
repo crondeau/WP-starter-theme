@@ -1,32 +1,41 @@
 // Colours
-$black: #000;
+$black: #404040;
 $white: #fff;
 $offwhite: #f0f1f1;
+
+$blue: #21759b;
+$orange: #CC8B14;
+$pale-yellow: #fff9c0;
+$green: #33B26E;
+$dark-green: #066;
+
 $grey: #5C6772;
-$light-grey: #b3b3b3;
+$dove-grey: #666;
+$light-grey: #eee;
+$silver: #ccc;
 
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #33B26E;
-$color__background-button-hover: #5C6772;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+$color__background-body: $white;
+$color__background-screen: $offwhite;
+$color__background-hr: $silver;
+$color__background-button: $green;
+$color__background-button-hover: $grey;
+$color__background-pre: $light-grey;
+$color__background-ins: $pale-yellow;
 
-$color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: #33B26E;
-$color__link-visited: #066;
-$color__link-hover: #CC8B14;
-$color__text-main: #404040;
-$color__heading: #474747;
+$color__text-screen: $blue;
+$color__text-input: $dove-grey;
+$color__text-input-focus: $black;
+$color__link: $green;
+$color__link-visited: $dark-green;
+$color__link-hover: $orange;
+$color__text-main: $black;
+$color__heading: $grey;
 
-$color__border-button: #ccc;
-$color__border-button-hover: #999;
-$color__border-button-focus: #aaa;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
+$color__border-button: $green;
+$color__border-button-hover: $grey;
+$color__border-button-focus: $silver;
+$color__border-input: $silver;
+$color__border-abbr: $dove-grey;
 
 
 // FONT FAMILY

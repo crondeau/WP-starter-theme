@@ -1,6 +1,7 @@
 .menu-toggle {
-    display: none;
     cursor: pointer;
+	display: none;
+	padding: 10px;
 }
 
 @media screen and (max-width: $phone-wide-landscape) {
@@ -11,7 +12,7 @@
 		font-family: $font__sans;
 		@include font-size(16px);
 		margin: 0;
-		padding: 10px 22px;
+
         text-decoration: none;
 		text-align: left;
 		text-transform: uppercase;

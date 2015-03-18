@@ -30,7 +30,7 @@ if ( post_password_required() ) {
 			?>
 		</h3>
 
-		<ol id="commentlist">
+		<ol id="commentlist" class="comment-list">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'ol',

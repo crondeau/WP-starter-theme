@@ -1,11 +1,11 @@
-#masthead { 
+.site-header { 
 	background: $grey;
 	padding-top: 2%;
 	@media screen and (min-width: $phone-wide-landscape) {
 		padding: 20px 0;
 	}
 	
-	#branding {
+	.site-branding {
 		float: left;
 		width: 100%;
 		@media screen and (min-width: $phone-wide-landscape) {
@@ -13,7 +13,7 @@
 		}
 	}
 	
-	#site-navigation {
+	.site-navigation {
 		float: left;
 		width: 100%;		
 		@media screen and (min-width: $phone-wide-landscape) {

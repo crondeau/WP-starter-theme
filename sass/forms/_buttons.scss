@@ -1,6 +1,6 @@
 .button {
 	background: $color__background-button;
-	border: none;
+	border: 1px solid $color__border-button;
 	@include border-radius(2px);
 	color: $white;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -10,7 +10,7 @@
 	text-transform: uppercase;
 	&:hover {
 		background: $color__background-button-hover;
-		border-color: none;
+		border-color: $color__border-button-hover;
 	}
 	&:focus, 
 	&:active {

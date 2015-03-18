@@ -6,7 +6,8 @@
  * @package blm_basic
  */
 ?>
-<section id="sidebar">
+<section id="sidebar" class="primary-sidebar post-widgets" role="complementary">
+
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 
@@ -14,7 +15,7 @@
 			<?php get_search_form(); ?>
 		</aside>	
 		
-	    <aside id="categories" class="widget"><h4>Categories</h4>
+	    <aside id="categories" class="widget"><h4 class="sidebar-title">Categories</h4>
 			<ul>
 				<?php wp_list_categories( 'title_li=' ); ?>
 			</ul>

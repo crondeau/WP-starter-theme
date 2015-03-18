@@ -9,7 +9,7 @@
 ?>
 
 <div class="entrymeta">
-	<p>Written by <?php the_author();?>, <?php the_time( 'F d, Y' ); ?>
+	<p class="small-text">Written by <?php the_author();?>, <?php the_time( 'F d, Y' ); ?>
 	<?php
 	if ( comments_open() ) :
 		echo ' | ';
@@ -17,5 +17,5 @@
 	   
 	endif;
 	?></p>
-	<p>Filed under: <?php the_category(', ');?> | <?php echo the_tags(); ?> </p>
+	<p class="small-text">Filed under: <?php the_category(', ');?> | <?php echo the_tags(); ?> </p>
 </div>

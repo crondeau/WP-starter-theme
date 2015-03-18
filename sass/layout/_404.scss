@@ -1,8 +1,7 @@
-
-#fourofour {
+.fourofour-content-area {
 	@include center-block;
 	padding-top: 50px;
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
 		width: 80%;

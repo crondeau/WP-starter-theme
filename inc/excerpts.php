@@ -2,7 +2,7 @@
 
 // Remove ellipses from excerpt
 function blm_custom_excerpt_more($more) {
-	return '<br /><a href="'. get_permalink() .'" class="more-link">Read more</a>';
+	return '...<br /><a href="'. get_permalink() .'" class="more-link">Read more</a>';
 	}
 add_filter('excerpt_more', 'blm_custom_excerpt_more');
 

@@ -13,7 +13,7 @@
 	}
 }
 
-#commentlist {
+.comment-list {
 	border-top: 1px solid $light-grey;
 	list-style: none;
 	margin: 0; 
@@ -38,13 +38,13 @@
 	}
 }
 
-#commentlist ul li{
+.comment-list ul li{
 	list-style: disc;
 }
-#commentlist ol li {
+.comment-list ol li {
 	list-style: decimal;
 }
-#commentlist .children {
+.comment-list .children {
 	list-style: none;
 	margin: 0.625em 0.625em 0 1.25em;
 	padding: 0;
