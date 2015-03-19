@@ -12,6 +12,7 @@ textarea {
 p, ul, ol, table, td, th, dl, dd, dt {
 	@include font-size(16px);
 }
+
 .small-text {
 	@include font-size(13px);
 }

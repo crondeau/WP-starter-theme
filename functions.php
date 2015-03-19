@@ -86,8 +86,8 @@ function blm_basic_scripts() {
 add_action( 'wp_enqueue_scripts', 'blm_basic_scripts' );
 
 
-// Custom post navigation for theme.
-require get_template_directory() . '/inc/page-navi.php';
+// Custom post navigation and post meta for theme.
+require get_template_directory() . '/inc/template-tags.php';
 
 // Modify the read more link.
 require get_template_directory() . '/inc/excerpts.php';

@@ -620,12 +620,26 @@ td, th {
     color: #fff;
   }
 }
-.entrymeta {
+.post {
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+  margin-bottom: 2em;
+}
+.post:first-of-type {
+  border: none;
+  padding-top: 0;
+}
+
+.entry-meta,
+.entry-footer {
   color: #5C6772;
+  font-size: 13px;
+  font-size: 1.3rem;
   margin-bottom: 1em;
 }
-.entrymeta p {
-  margin: 0.3125em 0;
+
+.cat-links, .tags-links, .comments-link {
+  margin-right: 1em;
 }
 
 /* Post pagination

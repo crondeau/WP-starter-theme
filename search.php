@@ -16,23 +16,15 @@ get_header(); ?>
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 		
-			<?php while (have_posts()) : the_post(); ?>
+			<?php 
+			while (have_posts()) : the_post(); 
 			
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					
-					<header class="entry-header">
-						<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-					</header><!-- .entry-header -->
-					
-					<div class="entry-summary">
-						<?php the_excerpt(); ?>
-					</div><!-- .entry-summary -->
-
-				</article>
+				get_template_part( 'content' );
 		
-	 	   <?php endwhile; ?>
+	 	   endwhile; 
+		   ?>
 		   
-		  	 <?php blm_basic_paging_nav(); ?>
+		   		<?php blm_basic_paging_nav(); ?>
 		   
 		   <?php else: ?>
 			   
