@@ -1,6 +1,6 @@
 .site-branding {
 	
-	.logo a {
+	.site-title a {
 		background: url("../images/logo.png") no-repeat;
 		@include image-2x("../images/logo@2x.png", 200px, 50px);
 		display: block;
@@ -9,7 +9,7 @@
 		width: 200px;
 	}
 	
-	.tagline {
+	.site-description {
 		display: none;
 	}
 }

@@ -13,16 +13,18 @@ get_header(); ?>
 	
 		<section id="content" class="primary-content">
 		
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			
-				<h1 class="post-title"><?php the_title(); ?></h1>
-			
-				<?php the_content(); ?>
-						
-				<?php get_template_part( 'inc/meta' ); ?>
-			
+				<header class="entry-header">
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<?php get_template_part( 'inc/meta' ); ?>
+				</header><!-- .entry-header -->
+				
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div><!-- .entry-content -->
+				
 				<nav class="navigation post-navigation" role="navigation">
 					<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h1>
 						<div class="nav-previous"><?php previous_post_link( '%link' ); ?></div>
@@ -33,7 +35,7 @@ get_header(); ?>
 
 	 	   <?php comments_template(); ?>
 	
-	 	 <?php endwhile; endif; ?>
+	 	 <?php endwhile; ?>
 	
 		</section>
 	

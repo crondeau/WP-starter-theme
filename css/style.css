@@ -257,10 +257,10 @@ h2 {
   font-size: 2.2rem;
   margin: 0.625em 0;
 }
-h2.post-title a {
+h2 a {
   text-decoration: none;
 }
-h2.post-title a:hover {
+h2 a:hover {
   text-decoration: underline;
 }
 
@@ -396,7 +396,7 @@ td, th {
   }
 }
 
-.fourofour-content-area {
+.fourofour-content {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
@@ -404,12 +404,12 @@ td, th {
   width: 100%;
 }
 @media screen and (min-width: 37.5em) {
-  .fourofour-content-area {
+  .fourofour-content {
     width: 80%;
   }
 }
 @media screen and (min-width: 48em) {
-  .fourofour-content-area {
+  .fourofour-content {
     width: 50%;
   }
 }
@@ -443,7 +443,7 @@ td, th {
   }
 }
 
-.site-branding .logo a {
+.site-branding .site-title a {
   background: url("../images/logo.png") no-repeat;
   display: block;
   height: 50px;
@@ -451,13 +451,13 @@ td, th {
   width: 200px;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  .site-branding .logo a {
+  .site-branding .site-title a {
     /* on retina, use image that's scaled by 2 */
     background-image: url("../images/logo@2x.png");
     background-size: 200px 50px;
   }
 }
-.site-branding .tagline {
+.site-branding .site-description {
   display: none;
 }
 
@@ -622,9 +622,7 @@ td, th {
 }
 .entrymeta {
   color: #5C6772;
-  border-top: 1px solid #eee;
-  margin: 0.625em 0;
-  padding: 0.3125em 0;
+  margin-bottom: 1em;
 }
 .entrymeta p {
   margin: 0.3125em 0;
@@ -789,19 +787,19 @@ td, th {
 
 /* Footer area 
 ---------------------*/
-.footer-area {
+.site-footer {
   background: #f0f1f1;
   text-align: center;
 }
-.footer-area p {
+.site-footer p {
   color: #5C6772;
   padding: 0.625em;
 }
-.footer-area a {
+.site-footer a {
   color: #eee;
   text-decoration: none;
 }
-.footer-area a:hover {
+.site-footer a:hover {
   text-decoration: underline;
 }
 

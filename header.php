@@ -39,21 +39,22 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	
-<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
+<div id="page" class="hfeed site">	
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 
-<header id="masthead" class="site-header row" role="banner">	
-	<div class="container">	
-		
-		<div id="branding" class="site-branding">
-			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
-		</div>
-		
-		<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
-			<h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'blm_basic' ); ?></a></h1>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav>	
 
-	</div>	
-</header>
+	<header id="masthead" class="site-header row" role="banner">	
+		<div class="container">	
+		
+			<div id="branding" class="site-branding">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			</div>
+		
+			<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
+				<h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'blm_basic' ); ?></a></h1>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav>	
+
+		</div>	
+	</header>

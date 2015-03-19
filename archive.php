@@ -12,20 +12,22 @@ get_header(); ?>
 	
 		<section id="content" class="primary-content">
 		
-			<?php if (have_posts()) : ?>
-	
+		<?php if (have_posts()) : ?>
+			<header class="page-header">
 				<h1 class="page-title"><?php the_archive_title(); ?></h1>
+			</header>
 	
 			<?php while (have_posts()) : the_post(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			
-	    		<h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-	
-		 		<?php the_content( 'Read more' );?>
+				<header class="entry-header">
+					<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<?php get_template_part( 'inc/meta' ); ?>
+				</header><!-- .entry-header -->
 				
-				<?php get_template_part( 'inc/meta' ); ?>
-			
+				<div class="entry-summary">
+					<?php the_excerpt(); ?>
+				</div><!-- .entry-summary -->
 			</article>
 	
 	 	 	<?php endwhile; endif; ?>

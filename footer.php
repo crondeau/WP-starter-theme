@@ -6,14 +6,14 @@
  */
 ?>
 
+	<footer id="footer" class="site-footer" role="contentinfo">
+		<div class="container">
 
-<footer id="footer" class="footer-area row">
-	<div class="container">
+			<p class="small-text">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
 
-		<p class="small-text">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
-
-	</div>
-</footer>
+		</div>
+	</footer>
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
 </body>
