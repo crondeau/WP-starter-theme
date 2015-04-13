@@ -17,21 +17,30 @@
 	}
 }
 
-.primary-content {
+.left-block {
+	background: red;
 	float: left;
+}
+
+.right-block {
+	background: yellow;
+	float: left;
+	@media screen and (min-width: $phone-wide-landscape) {
+		float: right;
+	}
+}
+
+.primary-content {	
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
 		width: 65%;
 	}
 }
 .primary-sidebar {
-	float: left;
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
-		float: right;
 		width: 25%;
 	}
 }
 
 @import "_404";
-

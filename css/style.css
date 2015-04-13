@@ -375,8 +375,22 @@ td, th {
   }
 }
 
-.primary-content {
+.left-block {
+  background: red;
   float: left;
+}
+
+.right-block {
+  background: yellow;
+  float: left;
+}
+@media screen and (min-width: 37.5em) {
+  .right-block {
+    float: right;
+  }
+}
+
+.primary-content {
   width: 100%;
 }
 @media screen and (min-width: 37.5em) {
@@ -386,12 +400,10 @@ td, th {
 }
 
 .primary-sidebar {
-  float: left;
   width: 100%;
 }
 @media screen and (min-width: 37.5em) {
   .primary-sidebar {
-    float: right;
     width: 25%;
   }
 }
@@ -424,7 +436,6 @@ td, th {
   }
 }
 .site-header .site-branding {
-  float: left;
   width: 100%;
 }
 @media screen and (min-width: 37.5em) {
@@ -433,12 +444,10 @@ td, th {
   }
 }
 .site-header .site-navigation {
-  float: left;
   width: 100%;
 }
 @media screen and (min-width: 37.5em) {
   .site-header .site-navigation {
-    float: right;
     width: 70%;
   }
 }
@@ -680,7 +689,6 @@ td, th {
   text-decoration: none;
 }
 .post-navigation .nav-previous {
-  float: left;
   width: 50%;
 }
 .post-navigation .nav-previous a:before {
@@ -688,7 +696,6 @@ td, th {
   padding-right: 5px;
 }
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%;
 }

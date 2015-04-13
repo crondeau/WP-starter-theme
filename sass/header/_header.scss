@@ -6,7 +6,6 @@
 	}
 	
 	.site-branding {
-		float: left;
 		width: 100%;
 		@media screen and (min-width: $phone-wide-landscape) {
 			width: 30%;
@@ -14,10 +13,8 @@
 	}
 	
 	.site-navigation {
-		float: left;
 		width: 100%;		
 		@media screen and (min-width: $phone-wide-landscape) {
-			float: right;
 			width: 70%;
 		}
 	}

@@ -6,7 +6,7 @@
  * @package blm_basic
  */
 ?>
-<section id="sidebar" class="primary-sidebar post-widgets" role="complementary">
+<section id="sidebar" class="primary-sidebar post-widgets right-block" role="complementary">
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 

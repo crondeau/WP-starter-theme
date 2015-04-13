@@ -10,7 +10,7 @@ get_header(); ?>
 <main id="main" class="site-main row" role="main">
 	<div class="container">
 	
-		<section id="content" class="primary-content">
+		<section id="content" class="primary-content left-block">
 		<?php if ( have_posts() ) : ?>	
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>

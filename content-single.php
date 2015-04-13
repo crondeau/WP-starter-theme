@@ -21,8 +21,8 @@
 	
 	<nav class="navigation post-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h1>
-		<div class="nav-previous"><?php previous_post_link( '%link' ); ?></div>
-		<div class="nav-next"><?php next_post_link( '%link' ); ?></div>
+		<div class="nav-previous left-block"><?php previous_post_link( '%link' ); ?></div>
+		<div class="nav-next right-block"><?php next_post_link( '%link' ); ?></div>
 	</nav>
 	
 </article><!-- #post-## -->

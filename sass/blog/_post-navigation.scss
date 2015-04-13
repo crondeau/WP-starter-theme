@@ -5,7 +5,6 @@
 		text-decoration: none;
 	}
 	.nav-previous {
-		float: left;
 		width: 50%;
 		a:before {
 			 content:"\00ab";
@@ -13,7 +12,6 @@
 		}
 	}
 	.nav-next {
-		float: right;
 		text-align: right;
 		width: 50%;
 		a:after {
