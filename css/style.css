@@ -376,12 +376,10 @@ td, th {
 }
 
 .left-block {
-  background: red;
   float: left;
 }
 
 .right-block {
-  background: yellow;
   float: left;
 }
 @media screen and (min-width: 37.5em) {

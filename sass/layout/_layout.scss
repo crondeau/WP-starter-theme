@@ -18,12 +18,10 @@
 }
 
 .left-block {
-	background: red;
 	float: left;
 }
 
-.right-block {
-	background: yellow;
+.right-block {;
 	float: left;
 	@media screen and (min-width: $phone-wide-landscape) {
 		float: right;
