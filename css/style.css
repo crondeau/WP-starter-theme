@@ -780,12 +780,13 @@ td, th {
   padding: 0 0 30px 0;
 }
 
-.primary-sidebar .sidebar-title {
+.sidebar-title {
   border-bottom: 1px solid #eee;
   margin: 0 0 1em;
   padding: 0 0 0.5em;
   text-transform: uppercase;
 }
+
 .primary-sidebar ul {
   list-style: none;
   margin-left: 0.5em;

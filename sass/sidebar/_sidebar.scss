@@ -4,13 +4,15 @@
 	padding: 0 0 30px 0;
 }
 
+.sidebar-title {
+	border-bottom: 1px solid $light-grey;
+	margin: 0 0 1em; 
+	padding: 0 0 0.5em; 
+	text-transform: uppercase;	
+}
+
 .primary-sidebar {
-	.sidebar-title {
-		border-bottom: 1px solid $light-grey;
-		margin: 0 0 1em; 
-		padding: 0 0 0.5em; 
-		text-transform: uppercase;	
-	}
+	
 	ul {
 		list-style: none;
 		margin-left: 0.5em;

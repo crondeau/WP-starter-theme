@@ -1,6 +1,6 @@
 <?php
 /**
- * The Footer Sidebar
+ * The Footer Sidebar which contains 4 footer widgets. 
  *
  * @package blm_basic
  */
@@ -16,7 +16,7 @@
 	if (   ! is_active_sidebar( 'footer-1'  )
 		&& ! is_active_sidebar( 'footer-2' )
 		&& ! is_active_sidebar( 'footer-3'  )
-		&& ! is_active_sidebar( 'f00ter-4' )
+		&& ! is_active_sidebar( 'footer-4' )
 	)
 		return;
 	// If we get this far, we have widgets. Let do this.
