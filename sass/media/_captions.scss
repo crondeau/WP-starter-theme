@@ -1,6 +1,6 @@
 .wp-caption {
 	background: $white;
-	@include border($light-grey, 1px, solid);
+	border :$light-grey 1px solid; 
 	padding: 3px;
 	margin-bottom: 1.5em;
 	max-width: 100%;
