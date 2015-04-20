@@ -24,5 +24,9 @@ input[type="reset"],
 input[type="submit"] {
 	@extend .button;
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	&:hover {
+		background: $color__background-button-hover;
+		@include transition (.07s, ease-in);
+	}
 }
 

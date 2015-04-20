@@ -5,22 +5,18 @@
 	max-width: 400px;
 	
 	input {
+		border: none;
+		border-radius: 0px !important;
 		height: 38px;
-		padding: 0 5px;
 		vertical-align: top;
 	}
 	
 	.search-field {
 		background: $offwhite;
-		border: none;
 		@include font-size (14px);
 		line-height: 1;
-		@include transition (.07s, ease-in);
-		position: relative;
+		padding: 0 5px;
 		width: 100%;
-		&:focus {
-			@include transition (.07s, ease-in);
-		}
 	}
 
 	.search-submit {
@@ -28,18 +24,10 @@
 		z-index: 10;
 		right: -10px;
 		top: 0;
-		background: $color__background-button;
-		border: none;
-		color: $white;
 		@include font-size (10px);
 		letter-spacing: 1px;
-		padding: 0 15px;
+		padding: 0 10px;
 		text-transform: uppercase;
 		-webkit-appearance: none;
-		&:hover {
-			background: $color__background-button-hover;
-			cursor: pointer;
-			@include transition (.07s, ease-in);
-		}
 	}
 }

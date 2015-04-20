@@ -882,6 +882,17 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
 }
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: #5C6772;
+  -webkit-transition: 0.07s, ease-in;
+  -moz-transition: 0.07s, ease-in;
+  -ms-transition: 0.07s, ease-in;
+  -o-transition: 0.07s, ease-in;
+  transition: 0.07s, ease-in;
+}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -921,7 +932,10 @@ textarea {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  font-size: 14px;
+  font-size: 1.4rem;
   padding: 3px;
+  -webkit-appearance: none;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -930,6 +944,11 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
   color: #404040;
+  -webkit-transition: 0.07s, ease-in;
+  -moz-transition: 0.07s, ease-in;
+  -ms-transition: 0.07s, ease-in;
+  -o-transition: 0.07s, ease-in;
+  transition: 0.07s, ease-in;
 }
 
 textarea {
@@ -947,54 +966,30 @@ textarea {
   max-width: 400px;
 }
 .search-form input {
+  border: none;
+  border-radius: 0px !important;
   height: 38px;
-  padding: 0 5px;
   vertical-align: top;
 }
 .search-form .search-field {
   background: #f0f1f1;
-  border: none;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1;
-  -webkit-transition: 0.07s, ease-in;
-  -moz-transition: 0.07s, ease-in;
-  -ms-transition: 0.07s, ease-in;
-  -o-transition: 0.07s, ease-in;
-  transition: 0.07s, ease-in;
-  position: relative;
+  padding: 0 5px;
   width: 100%;
-}
-.search-form .search-field:focus {
-  -webkit-transition: 0.07s, ease-in;
-  -moz-transition: 0.07s, ease-in;
-  -ms-transition: 0.07s, ease-in;
-  -o-transition: 0.07s, ease-in;
-  transition: 0.07s, ease-in;
 }
 .search-form .search-submit {
   position: absolute;
   z-index: 10;
   right: -10px;
   top: 0;
-  background: #33B26E;
-  border: none;
-  color: #fff;
   font-size: 10px;
   font-size: 1rem;
   letter-spacing: 1px;
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   -webkit-appearance: none;
-}
-.search-form .search-submit:hover {
-  background: #5C6772;
-  cursor: pointer;
-  -webkit-transition: 0.07s, ease-in;
-  -moz-transition: 0.07s, ease-in;
-  -ms-transition: 0.07s, ease-in;
-  -o-transition: 0.07s, ease-in;
-  transition: 0.07s, ease-in;
 }
 
 /* Make sure embeds and iframes fit their containers */
@@ -1032,9 +1027,7 @@ object {
 }
 .wp-caption {
   background: #fff;
-  border-color: #eee;
-  border-width: 1px;
-  border-style: solid;
+  border: #eee 1px solid;
   padding: 3px;
   margin-bottom: 1.5em;
   max-width: 100%;
