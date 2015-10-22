@@ -546,6 +546,7 @@ td, th {
 @media screen and (max-width: 37.5em) {
   .menu-toggle {
     background: #404040;
+    border: none;
     color: #fff;
     display: inline-block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

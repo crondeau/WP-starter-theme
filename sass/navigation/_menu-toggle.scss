@@ -7,6 +7,7 @@
 @media screen and (max-width: $phone-wide-landscape) {
     .menu-toggle {
 		background: $color__text-main;
+		border: none;
 		color: $white;
         display: inline-block;
 		font-family: $font__sans;
