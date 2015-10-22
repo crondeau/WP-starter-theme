@@ -2,9 +2,7 @@
     position: relative;
     display: block;
 	ul {
-		list-style: none;
-	    margin: 0;
-	    padding-left: 0;
+		@extend .no-padding-list;
 		li {
 		    position: relative;
 		    float: left;
@@ -50,10 +48,9 @@
 			}
 		}
 	}
-	.current_page_parent a, 
-	.current_page_ancestor a,
 	.current_page_item > a,
 	.current-menu-item > a,
+	.current_page_ancestor,
 	.current_page_item > a:hover,
 	.current-menu-item > a:hover,
 	.current_page_item > a:focus,

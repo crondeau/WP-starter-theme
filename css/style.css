@@ -1,3 +1,9 @@
+.no-padding-list, .main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -457,11 +463,6 @@ td, th {
   position: relative;
   display: block;
 }
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
 .main-navigation ul li {
   position: relative;
   float: left;
@@ -505,10 +506,9 @@ td, th {
   background: #33B26E;
   color: #fff;
 }
-.main-navigation .current_page_parent a,
-.main-navigation .current_page_ancestor a,
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover,
 .main-navigation .current_page_item > a:focus,
