@@ -38,16 +38,6 @@
 	margin: 0 auto;
 }
 
-// Calculate Rems
-@function calculateRem($size) {
-  $remSize: $size / 10px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
 
 // Transition 
 @mixin transition($transition-time, $method) {

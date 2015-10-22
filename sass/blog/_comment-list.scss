@@ -7,10 +7,8 @@
 	float: left;
 	padding: 0 1.25em 0.625em 0;
 }		
-.comment-meta {
-	a {
-		text-decoration: none;
-	}
+.comment-meta a {
+	text-decoration: none;
 }
 
 .comment-list {
@@ -25,7 +23,7 @@
 		border-bottom: 1px solid $light-grey;
 	}
 	li {
-		@include font-size(14px);
+		font-size: $font__size-small;
 		padding: 0.625em; 
 		margin: 0;
 		p {

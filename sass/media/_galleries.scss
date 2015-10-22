@@ -49,7 +49,7 @@
 
 .gallery-caption {
 	display: block;
-	@include font-size(13px);	
+	font-size: $font__size-small;
 }
 
 .gallery-columns-6 .gallery-caption,

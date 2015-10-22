@@ -1,5 +1,5 @@
 .post-navigation {
-	@include font-size(15px);
+	font-size: $font__size-small;
 	padding: 2em 0;
 	a {
 		text-decoration: none;

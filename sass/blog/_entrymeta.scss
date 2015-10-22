@@ -1,8 +1,8 @@
 .entry-meta,
 .entry-footer {
 	color: $grey;
-	@include font-size(13px);
-	margin-bottom: 1em;
+	font-size: $font__size-small;
+	margin-bottom: 15px;
 }
 .cat-links, .tags-links, .comments-link {
   margin-right: 1em;

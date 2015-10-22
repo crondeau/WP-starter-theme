@@ -1,20 +1,20 @@
 .wp-caption {
 	background: $white;
-	border :$light-grey 1px solid; 
+	border: solid 1px $light-grey; 
 	padding: 3px;
-	margin-bottom: 1.5em;
+	margin-bottom: 20px;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {
 		@include center-block;
 	}
 	.wp-caption-text {
-		margin: 0.8075em 0;
+		margin: 8px 0;
 	}
 }
 
 .wp-caption-text {
-	@include font-size(13px);
+	font-size: $font__size-small;
 	text-align: center;
 }
 

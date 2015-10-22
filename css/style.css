@@ -109,7 +109,6 @@ a img {
   color: #21759b;
   display: block;
   font-size: 14px;
-  font-size: 1.4rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -130,18 +129,11 @@ textarea {
   color: #404040;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-size: 1.6rem;
   line-height: 1.5;
 }
 
-p, ul, ol, table, td, th, dl, dd, dt {
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-
 .small-text {
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 14px;
 }
 
 p {
@@ -167,8 +159,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -177,8 +168,7 @@ pre {
 }
 
 code, kbd, tt, var {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 14px;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
@@ -248,14 +238,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  font-size: 3rem;
-  margin: 0 0 0.625em;
+  margin: 0 0 20px;
 }
 
 h2 {
   font-size: 22px;
-  font-size: 2.2rem;
-  margin: 0.625em 0;
+  margin: 15px 0;
 }
 h2 a {
   text-decoration: none;
@@ -266,8 +254,7 @@ h2 a:hover {
 
 h3, h4, h5, h6 {
   font-size: 18px;
-  font-size: 1.8rem;
-  margin: 0.625em 0;
+  margin: 15px 0;
 }
 
 blockquote {
@@ -279,13 +266,11 @@ blockquote {
 }
 blockquote p {
   font-size: 22px;
-  font-size: 2.2rem;
   margin-bottom: 0.75em;
 }
 @media screen and (max-width: 30em) {
   blockquote p {
     font-size: 18px;
-    font-size: 1.8rem;
   }
 }
 
@@ -550,8 +535,6 @@ td, th {
     color: #fff;
     display: inline-block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-size: 1.6rem;
     margin: 0;
     text-decoration: none;
     text-align: left;
@@ -568,8 +551,6 @@ td, th {
   }
   .menu-toggle:before {
     content: '\2261';
-    font-size: 16px;
-    font-size: 1.6rem;
     margin-right: 10px;
   }
 }
@@ -641,9 +622,8 @@ td, th {
 .entry-meta,
 .entry-footer {
   color: #5C6772;
-  font-size: 13px;
-  font-size: 1.3rem;
-  margin-bottom: 1em;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .cat-links, .tags-links, .comments-link {
@@ -680,8 +660,7 @@ td, th {
 }
 
 .post-navigation {
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 14px;
   padding: 2em 0;
 }
 .post-navigation a {
@@ -729,7 +708,6 @@ td, th {
 }
 .comment-list li {
   font-size: 14px;
-  font-size: 1.4rem;
   padding: 0.625em;
   margin: 0;
 }
@@ -788,8 +766,6 @@ td, th {
 
 .sidebar-title {
   border-bottom: 1px solid #eee;
-  margin: 0 0 1em;
-  padding: 0 0 0.5em;
   text-transform: uppercase;
 }
 
@@ -800,7 +776,6 @@ td, th {
 .primary-sidebar ul li {
   padding: 0.5em 0;
   font-size: 14px;
-  font-size: 1.4rem;
 }
 .primary-sidebar a {
   text-decoration: none;
@@ -854,7 +829,6 @@ input[type="submit"] {
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   font-size: 14px;
-  font-size: 1.4rem;
   line-height: 1;
   padding: 10px 15px;
   text-transform: uppercase;
@@ -934,7 +908,6 @@ textarea {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   font-size: 14px;
-  font-size: 1.4rem;
   padding: 3px;
   -webkit-appearance: none;
 }
@@ -974,8 +947,6 @@ textarea {
 }
 .search-form .search-field {
   background: #f0f1f1;
-  font-size: 14px;
-  font-size: 1.4rem;
   line-height: 1;
   padding: 0 5px;
   width: 100%;
@@ -985,8 +956,6 @@ textarea {
   z-index: 10;
   right: -10px;
   top: 0;
-  font-size: 10px;
-  font-size: 1rem;
   letter-spacing: 1px;
   padding: 0 10px;
   text-transform: uppercase;
@@ -1028,9 +997,9 @@ object {
 }
 .wp-caption {
   background: #fff;
-  border: #eee 1px solid;
+  border: solid 1px #eee;
   padding: 3px;
-  margin-bottom: 1.5em;
+  margin-bottom: 20px;
   max-width: 100%;
 }
 .wp-caption img[class*="wp-image-"] {
@@ -1038,12 +1007,11 @@ object {
   margin: 0 auto;
 }
 .wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
+  margin: 8px 0;
 }
 
 .wp-caption-text {
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -1098,8 +1066,7 @@ object {
 
 .gallery-caption {
   display: block;
-  font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 14px;
 }
 
 .gallery-columns-6 .gallery-caption,

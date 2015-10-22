@@ -11,9 +11,7 @@
 		color: $white;
         display: inline-block;
 		font-family: $font__sans;
-		@include font-size(16px);
 		margin: 0;
-
         text-decoration: none;
 		text-align: left;
 		text-transform: uppercase;
@@ -28,7 +26,6 @@
 		}
 		&:before {
 			content: '\2261';
-			@include font-size(16px);
 			margin-right: 10px;
 		}
     }

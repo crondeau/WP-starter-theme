@@ -5,10 +5,10 @@ blockquote {
 	margin: 0.5em 0;
 	padding: 0.5em 1em 0;
 	p {
-		@include font-size(22px);
+		font-size: $font__size-large;
 		margin-bottom: 0.75em;
 		@media screen and (max-width: $phone-landscape) {
-			@include font-size(18px);
+			font-size: $font__size-medium;
 		}
 	}
 }

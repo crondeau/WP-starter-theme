@@ -6,13 +6,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	@include font-size(30px);
-	margin: 0 0 0.625em;
+	font-size: $font__size-xlarge;
+	margin: 0 0 20px;
 }
 
 h2 {
-	@include font-size(22px);
-	margin: 0.625em 0;
+	font-size: $font__size-large;
+	margin: 15px 0;
 	a {
 		text-decoration: none;
 		&:hover {
@@ -22,6 +22,6 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-	@include font-size(18px);
-	margin: 0.625em 0;
+	font-size: $font__size-medium;
+	margin: 15px 0;
 }

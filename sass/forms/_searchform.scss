@@ -13,7 +13,6 @@
 	
 	.search-field {
 		background: $offwhite;
-		@include font-size (14px);
 		line-height: 1;
 		padding: 0 5px;
 		width: 100%;
@@ -24,7 +23,6 @@
 		z-index: 10;
 		right: -10px;
 		top: 0;
-		@include font-size (10px);
 		letter-spacing: 1px;
 		padding: 0 10px;
 		text-transform: uppercase;
