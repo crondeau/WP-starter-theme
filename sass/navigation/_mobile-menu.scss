@@ -7,12 +7,12 @@
 			display: none;
 			padding-left: 0;
 			li {
+				border-top: 1px solid $light-grey;
 				float: none;
 				a {
 					background: $color__text-main;
 					color: $white;
 					padding: 10px 20px;
-
 					&:hover{
 						background: $grey;
 					}
@@ -27,20 +27,21 @@
 				display: block;
 				float: none;
 				width: 100%;
+				li {
+					border: none;
+				}
 			}
 			ul a { 
-				color: $white;
+				padding-left: 40px;
 				width: 100%;
-				&:hover {
-					background: $grey;
-				}
-
+			}
+			ul ul a {
+				padding-left: 60px;
 			}
 		}
 		.current_page_ancestor,
 	   	.current_page_item > a,
 	   	.current-menu-item > a,
-	   	
 	   	ul ul .current_page_parent,
 	   	.current_page_parent .current_page_item > a {
 	   	    background: $color__text-main;

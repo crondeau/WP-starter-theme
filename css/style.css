@@ -564,6 +564,7 @@ td, th {
     padding-left: 0;
   }
   .main-navigation ul li {
+    border-top: 1px solid #eee;
     float: none;
   }
   .main-navigation ul li a {
@@ -584,12 +585,16 @@ td, th {
     float: none;
     width: 100%;
   }
+  .main-navigation ul ul li,
+  .main-navigation ul ul ul li {
+    border: none;
+  }
   .main-navigation ul ul a {
-    color: #fff;
+    padding-left: 40px;
     width: 100%;
   }
-  .main-navigation ul ul a:hover {
-    background: #5C6772;
+  .main-navigation ul ul ul a {
+    padding-left: 60px;
   }
   .main-navigation .current_page_ancestor,
   .main-navigation .current_page_item > a,
