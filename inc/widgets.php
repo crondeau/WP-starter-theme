@@ -27,7 +27,7 @@ function blm_widgets_init() {
 		'id' => 'footer-1',
 		'name' => __( 'Footer 1', 'blm_basic' ),
 		'description' => __( 'The following widgets will appear in the first footer widget area.', 'blm_basic' ),
-		'before_widget' => '<aside id="first" class="widget-area">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
@@ -37,7 +37,7 @@ function blm_widgets_init() {
 		'id' => 'footer-2',
 		'name' => __( 'Footer 2', 'blm_basic' ),
 		'description' => __( 'The following widgets will appear in the second footer widget area.', 'blm_basic' ),
-		'before_widget' => '<aside id="second" class="widget-area">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
@@ -46,7 +46,7 @@ function blm_widgets_init() {
 		'id' => 'footer-3',
 		'name' => __( 'Footer 3', 'blm_basic' ),
 		'description' => __( 'The following widgets will appear in the third footer widget area.', 'blm_basic' ),
-		'before_widget' => '<aside id="third" class="widget-area">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
@@ -56,7 +56,7 @@ function blm_widgets_init() {
 		'id' => 'footer-4',
 		'name' => __( 'Footer 4', 'blm_basic' ),
 		'description' => __( 'The following widgets will appear in the fourth footer widget area.', 'blm_basic' ),
-		'before_widget' => '<aside id="fourth" class="widget-area">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="footer-title">',
 		'after_title' => '</h4>'
