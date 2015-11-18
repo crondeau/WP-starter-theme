@@ -138,12 +138,12 @@ textarea {
   line-height: 1.5;
 }
 
-.small-text {
-  font-size: 14px;
+p {
+  margin-bottom: 1em;
 }
 
-p {
-  margin-bottom: 1.5em;
+.small-text {
+  font-size: 14px;
 }
 
 b, strong {
