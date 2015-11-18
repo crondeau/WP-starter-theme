@@ -1,22 +1,21 @@
 .main-navigation {
-    position: relative;
-    display: block;
 	ul {
 		@extend .no-padding-list;
+		@include flexbox;
+		@include justify-content(space-between);
 		li {
 		    position: relative;
-		    float: left;
 			&:hover {
 			    color: $white;
 			    background: $color__link;
 			}
 			&:hover ul {
-				display: block; 
+				display: block;
 			}
 			a {
 				color: $white;
 				display: block;
-				padding: 5px 15px;
+				padding: 5px;
 				text-decoration: none;
 				&:hover {
 					background: $color__link;

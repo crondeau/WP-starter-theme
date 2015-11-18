@@ -459,13 +459,20 @@ td, th {
   display: none;
 }
 
-.main-navigation {
-  position: relative;
-  display: block;
+.main-navigation ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
 }
 .main-navigation ul li {
   position: relative;
-  float: left;
 }
 .main-navigation ul li:hover {
   color: #fff;
@@ -477,7 +484,7 @@ td, th {
 .main-navigation ul li a {
   color: #fff;
   display: block;
-  padding: 5px 15px;
+  padding: 5px;
   text-decoration: none;
 }
 .main-navigation ul li a:hover {
@@ -565,7 +572,6 @@ td, th {
   }
   .main-navigation ul li {
     border-top: 1px solid #eee;
-    float: none;
   }
   .main-navigation ul li a {
     background: #404040;
