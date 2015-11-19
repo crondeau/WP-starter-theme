@@ -7,7 +7,7 @@
 		@include border-radius(0);
 		&.search-field {
 			background: $offwhite;
-			width: calc(100% - 10px);
+			width: 100%;
 		}
 	}	
 	label {
