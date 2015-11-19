@@ -1,20 +1,35 @@
 .site-header { 
 	background: $grey;
-	padding-top: 2%;
-	@media screen and (min-width: $phone-wide-landscape) {
+	@media screen and (min-width: $tablet-portrait) {
 		padding: 20px 0;
 	}
-	
-	.site-branding {
-		width: 100%;
-		@media screen and (min-width: $phone-wide-landscape) {
-			width: 30%;
+}
+.header-wrapper {
+	@include flexbox;
+	@include flex-direction(column);
+		.site-branding {
+			@include order(2);
+		}
+		.site-navigation {
+			@include order(1);
+		}
+	@media screen and (min-width: $phone-wide-landscape) {
+		.site-branding {
+			width: 100%;
+			@include order(1);
+		}
+		.site-navigation {
+			width: 100%;
+			@include order(2);
 		}
 	}
-	
-	.site-navigation {
-		width: 100%;		
-		@media screen and (min-width: $phone-wide-landscape) {
+	@media screen and (min-width: $tablet-portrait) {
+		@include flex-direction(row);
+		@include align-items(center);
+		.site-branding {
+			width: 30%;
+		}
+		.site-navigation {
 			width: 70%;
 		}
 	}

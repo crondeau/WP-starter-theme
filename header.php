@@ -25,14 +25,14 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 
 	<header id="masthead" class="site-header row" role="banner">	
-		<div class="container">	
+		<div class="container header-wrapper">	
 		
-			<div id="branding" class="site-branding left-block">
+			<div id="branding" class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div>
 		
-			<nav id="site-navigation" class="site-navigation main-navigation right-block" role="navigation">
+			<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
 				<button class="menu-toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>	
