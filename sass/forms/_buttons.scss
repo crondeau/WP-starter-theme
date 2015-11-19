@@ -5,8 +5,7 @@
 	color: $white;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	font-size: $font__size-small;
-	line-height: 1;
-	padding:  10px 15px;
+	line-height: 2;
 	text-transform: uppercase;
 	&:hover {
 		background: $color__background-button-hover;

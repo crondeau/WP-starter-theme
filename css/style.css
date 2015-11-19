@@ -901,8 +901,7 @@ input[type="submit"] {
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   font-size: 14px;
-  line-height: 1;
-  padding: 10px 15px;
+  line-height: 2;
   text-transform: uppercase;
 }
 .button:hover, button:hover,
@@ -980,7 +979,8 @@ textarea {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   font-size: 14px;
-  padding: 3px;
+  line-height: 1;
+  padding: 10px 5px;
   -webkit-appearance: none;
 }
 input[type="text"]:focus,
@@ -1008,30 +1008,30 @@ textarea {
 /* Search Form
 -------------------------------------------*/
 .search-form {
-  position: relative;
-  max-width: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .search-form input {
   border: none;
-  border-radius: 0px !important;
-  height: 38px;
-  vertical-align: top;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
-.search-form .search-field {
+.search-form input.search-field {
   background: #f0f1f1;
-  line-height: 1;
-  padding: 0 5px;
-  width: 100%;
+  width: calc(100% - 10px);
 }
-.search-form .search-submit {
-  position: absolute;
-  z-index: 10;
-  right: -10px;
-  top: 0;
-  letter-spacing: 1px;
-  padding: 0 10px;
-  text-transform: uppercase;
-  -webkit-appearance: none;
+.search-form label {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 /* Make sure embeds and iframes fit their containers */

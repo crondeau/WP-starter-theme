@@ -112,6 +112,22 @@
 	justify-content: $value;
 }
 
+
+@mixin align-content($value: stretch) {
+	// No Webkit Box Fallback.
+	-webkit-align-content: $value;
+	-moz-align-content: $value;
+	@if $value == flex-start {
+		-ms-flex-line-pack: start;
+	} @else if $value == flex-end {
+		-ms-flex-line-pack: end;
+	} @else {
+		-ms-flex-line-pack: $value;
+	}
+	align-content: $value;
+}
+
+
 @mixin align-items($value: stretch) {
 	@if $value == flex-start {
 		-webkit-box-align: start;
@@ -128,6 +144,7 @@
 	align-items: $value;
 }
 
+
 @mixin order($int: 0) {
 	-webkit-box-ordinal-group: $int + 1;
 	-webkit-order: $int;
@@ -135,6 +152,51 @@
 	-ms-flex-order: $int;
 	order: $int;
 }
+
+
+
+
+@mixin flex-basis($value: auto) {
+	-webkit-flex-basis: $value;
+	-moz-flex-basis: $value;
+	-ms-flex-preferred-size: $value;
+	flex-basis: $value;
+}
+
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+    
+	// Set a variable to be used by box-flex properties
+	$fg-boxflex: $fg;
+
+	// Box-Flex only supports a flex-grow value so let's grab the
+	// first item in the list and just return that.
+	@if type-of($fg) == 'list' {
+		$fg-boxflex: nth($fg, 1);
+	}
+
+	-webkit-box-flex: $fg-boxflex;
+	-webkit-flex: $fg $fs $fb;
+	-moz-box-flex: $fg-boxflex;
+	-moz-flex: $fg $fs $fb;
+	-ms-flex: $fg $fs $fb;
+	flex: $fg $fs $fb;
+}
+
+@mixin align-self($value: auto) {
+	// No Webkit Box Fallback.
+	-webkit-align-self: $value;
+	-moz-align-self: $value;
+	@if $value == flex-start {
+		-ms-flex-item-align: start;
+	} @else if $value == flex-end {
+		-ms-flex-item-align: end;
+	} @else {
+		-ms-flex-item-align: $value;
+	}
+	align-self: $value;
+}
+
+
 
 .no-padding-list {
 	list-style-type: none;
