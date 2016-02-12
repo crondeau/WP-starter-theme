@@ -6,7 +6,7 @@
  * @package blm_basic
  */
 ?>
-<aside id="sidebar" class="primary-sidebar right-block" role="complementary">
+<aside id="secondary" class="primary-sidebar right-block" role="complementary">
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 
@@ -23,4 +23,4 @@
 		
 	<?php endif; ?>
 	
-</aside>
+</aside><!-- #secondary -->

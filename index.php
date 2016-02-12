@@ -11,22 +11,21 @@ get_header(); ?>
 	<div class="container">
 
 		<div id="primary" class="primary-content left-block">
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="content-area" role="main">
 		
-			<?php 
-			if (have_posts()) : while (have_posts()) : the_post(); 
+			<?php if (have_posts()) : while (have_posts()) : the_post(); 
 				
 				get_template_part( 'content' ); 
 
-			endwhile; endif; 
-			?>
+			endwhile; endif; ?>
 	
 			<?php blm_basic_paging_nav(); ?>
-	
-			</div><!-- .container -->
-		</main><!-- #main -->
-
+			
+			</main><!-- #main -->
+		</div><!-- #primary -->
+		
 		<?php get_sidebar(); ?>
-	</div>
-</section>
+		
+	</div><!-- .container -->
+</section><!-- .site-main -->
 <?php get_footer(); ?>

@@ -11,25 +11,26 @@ get_header(); ?>
 	<div class="container">
 
 		<div id="primary" class="primary-content left-block">
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="content-area" role="main">
 				
-				<?php if ( have_posts() ) : ?>	
+				
 				<header class="page-header">
 					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header><!-- .page-header -->
-		
-				<?php 
-				while (have_posts()) : the_post(); 
+				
+			<?php if ( have_posts() ) : ?>	
+				
+				<?php while (have_posts()) : the_post(); 
 			
 					get_template_part( 'content' );
-		
-		 	   endwhile; ?>
+					
+				endwhile; ?>
 		   
 		   		<?php blm_basic_paging_nav(); ?>
 		   
 		  	 	<?php else: ?>
-			   
-			   <article class="no-results">
+
+			   	<article class="no-results">
 		
 				   <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
 				   
@@ -37,10 +38,11 @@ get_header(); ?>
 	
 	  	 <?php endif; ?>
 
-			</div><!-- .container -->
-		</main><!-- #main -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
 		<?php get_sidebar(); ?>
-	</div>
-</section>
+		
+	</div><!-- .container -->
+</section><!-- .site-main -->
 <?php get_footer(); ?>
