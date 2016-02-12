@@ -856,19 +856,9 @@ td, th {
 /* Footer area 
 ---------------------*/
 .site-footer {
-  background: #f0f1f1;
+  background: rgba(64, 64, 64, 0.08);
+  padding: 30px 0;
   text-align: center;
-}
-.site-footer p {
-  color: #5C6772;
-  padding: 0.625em;
-}
-.site-footer a {
-  color: #eee;
-  text-decoration: none;
-}
-.site-footer a:hover {
-  text-decoration: underline;
 }
 
 button,

@@ -1,18 +1,8 @@
 /* Footer area 
 ---------------------*/
 .site-footer {
-	background: $offwhite;
+	background: rgba($color__text-main, 0.08);
+	padding: 30px 0;
 	text-align: center;
-	p {
-		color: $grey;
-		padding: 0.625em;
-	}	
-	a {
-		color: $light-grey;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
 }
 
