@@ -7,10 +7,11 @@
 
 get_header(); ?>
 
-<main id="main" class="site-main row" role="main">
+<section class="site-main row">
 	<div class="container">
 
-		<section id="content" class="primary-content left-block">
+		<div id="primary" class="primary-content left-block">
+			<main id="main" class="site-main" role="main">
 		
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -28,10 +29,10 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 		
-		</section><!-- #content -->
+			</div><!-- .container -->
+		</main><!-- #main -->
 
 		<?php get_sidebar(); ?>
-	
-	</div><!-- .container -->
-</main><!-- #main -->
+	</div>
+</section>
 <?php get_footer(); ?>

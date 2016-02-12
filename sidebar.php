@@ -6,21 +6,21 @@
  * @package blm_basic
  */
 ?>
-<section id="sidebar" class="primary-sidebar post-widgets right-block" role="complementary">
+<aside id="sidebar" class="primary-sidebar right-block" role="complementary">
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 
-		<aside id="search" class="widget widget_search">
+		<div id="search" class="widget widget_search">
 			<?php get_search_form(); ?>
-		</aside>	
+		</div>	
 		
-	    <aside id="categories" class="widget">
+	    <div id="categories" class="widget">
 			<h4 class="sidebar-title">Categories</h4>
 			<ul>
 				<?php wp_list_categories( 'title_li=' ); ?>
 			</ul>
-		</aside>
+		</div>
 		
 	<?php endif; ?>
 	
-</section>
+</aside>

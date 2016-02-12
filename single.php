@@ -8,10 +8,11 @@
 get_header(); ?>
 
 
-<main id="main" class="site-main row" role="main">
+<section class="site-main row">
 	<div class="container">
-	
-		<section id="content" class="primary-content left-block">
+
+		<div id="primary" class="primary-content left-block">
+			<main id="main" class="site-main" role="main">
 		
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -35,17 +36,16 @@ get_header(); ?>
 	
 				</article><!-- #post-## -->
 
-			<?php // If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
+				<?php // If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
 			
-			endif; endwhile; ?>	
+				endif; endwhile; ?>	
 
-		</section>
-	
+			</div><!-- .container -->
+		</main><!-- #main -->
+
 		<?php get_sidebar(); ?>
-
-	</div><!-- .container -->
-</main><!-- .site-main -->
-
+	</div>
+</section>
 <?php get_footer(); ?>
