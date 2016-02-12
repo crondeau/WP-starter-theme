@@ -403,19 +403,10 @@ td, th {
 .fourofour-content {
   display: block;
   margin: 0 auto;
+  max-width: 500px;
   padding-top: 50px;
   padding-bottom: 200px;
   width: 100%;
-}
-@media screen and (min-width: 37.5em) {
-  .fourofour-content {
-    width: 80%;
-  }
-}
-@media screen and (min-width: 48em) {
-  .fourofour-content {
-    width: 50%;
-  }
 }
 
 .site-header {

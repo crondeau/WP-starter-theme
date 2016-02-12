@@ -1,12 +1,7 @@
 .fourofour-content {
 	@include center-block;
+	max-width: 500px;
 	padding-top: 50px;
 	padding-bottom: 200px;
-	width: 100%;	
-	@media screen and (min-width: $phone-wide-landscape) {
-		width: 80%;
-	}
-	@media screen and (min-width: $tablet-portrait) {
-		width: 50%;
-	}
+	width: 100%;
 }
