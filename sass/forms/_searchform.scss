@@ -3,10 +3,8 @@
 .search-form {
 	@include flexbox;
 	input {
-		border: none;
 		@include border-radius(0);
 		&.search-field {
-			background: $offwhite;
 			width: 100%;
 		}
 	}	

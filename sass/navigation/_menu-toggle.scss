@@ -8,7 +8,7 @@
     .menu-toggle {
 		background: $color__text-main;
 		border: none;
-		color: $white;
+		color: $color__link-background;
         display: inline-block;
 		font-family: $font__sans;
 		margin: 0;
@@ -18,11 +18,8 @@
 		width: 100%;
 		a, 
 		a:hover {
-			color: $white;
+			color: $color__link-background;
 			text-decoration: none;
-		}
-		&:hover {
-			background: $grey;
 		}
 		&:before {
 			content: '\2261';

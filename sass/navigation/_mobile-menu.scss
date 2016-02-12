@@ -7,13 +7,13 @@
 			display: none;
 			padding-left: 0;
 			li {
-				border-top: 1px solid $light-grey;
+				border-top: 1px solid $color__border-default;
 				a {
 					background: $color__text-main;
-					color: $white;
+					color: $color__link-background;
 					padding: 10px 20px;
 					&:hover{
-						background: $grey;
+						background: rgba($color__text-main, 0.8);
 					}
 				}
 			}
@@ -38,23 +38,24 @@
 				padding-left: 60px;
 			}
 		}
-		.current_page_ancestor,
-	   	.current_page_item > a,
-	   	.current-menu-item > a,
-	   	ul ul .current_page_parent,
-	   	.current_page_parent .current_page_item > a {
-	   	    background: $color__text-main;
-	   	   	color: $white;
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a,
+		.current_page_item > a:hover,
+		.current-menu-item > a:hover,
+		.current_page_item > a:focus,
+		.current-menu-item > a:focus {
+		    background: $color__text-main;
+			color: $color__link-background;
 		}
-		
-		.current_page_item li:hover,
-		.current_page_item li:focus,
-		.current_page_item li > a:focus,
-		.current-menu-item li > a:focus,
-	   	.current_page_item > a:hover,
-	   	.current-menu-item > a:hover {
-			background: $grey;
-			color: $white;
-	   	}
+		ul ul .current_page_parent,
+		.current_page_parent .current_page_item > a {
+		    background: $color__text-main;
+		   	color: $color__link-background;
+			&:hover {
+			    background: rgba($color__text-main, 0.8);
+				color: $color__link-background;
+			}
+		}
 	}
 } 

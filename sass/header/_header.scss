@@ -1,5 +1,5 @@
 .site-header { 
-	background: $grey;
+	background: rgba($color__text-main, 0.75);
 	@media screen and (min-width: $tablet-portrait) {
 		padding: 20px 0;
 	}

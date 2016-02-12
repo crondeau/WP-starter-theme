@@ -7,10 +7,8 @@ $blue: #21759b;
 $orange: #CC8B14;
 $pale-yellow: #fff9c0;
 $green: #33B26E;
-$dark-green: #066;
 
 $grey: #5C6772;
-$dove-grey: #666;
 $light-grey: #eee;
 $silver: #ccc;
 
@@ -23,19 +21,21 @@ $color__background-pre: $light-grey;
 $color__background-ins: $pale-yellow;
 
 $color__text-screen: $blue;
-$color__text-input: $dove-grey;
+$color__text-input: $grey;
 $color__text-input-focus: $black;
+$color__link-background: $white;
 $color__link: $green;
-$color__link-visited: $dark-green;
+$color__link-visited: $green;
 $color__link-hover: $orange;
 $color__text-main: $black;
 $color__heading: $grey;
 
+$color__border-default: $light-grey;
 $color__border-button: $green;
 $color__border-button-hover: $grey;
 $color__border-button-focus: $silver;
 $color__border-input: $silver;
-$color__border-abbr: $dove-grey;
+$color__border-abbr: $silver;
 
 
 // FONT FAMILY

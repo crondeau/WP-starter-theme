@@ -13,13 +13,8 @@
 	a.page-numbers,
 	span.page-numbers {
 		padding: 3px 8px;
-		color: $grey;
 		text-decoration: none;
-		&:hover {
-			color: $black;
-		}
 		&.current {
-			color: $color__link;
 			font-weight: bold;
 		}
 	}
