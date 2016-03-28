@@ -485,6 +485,9 @@ td, th {
   }
 }
 
+.site-title {
+  margin: 0;
+}
 .site-title a {
   background: url("../images/logo.png") no-repeat;
   display: block;
@@ -509,6 +512,7 @@ td, th {
 
 .site-description {
   display: none;
+  margin: 0;
 }
 
 .main-navigation ul {
