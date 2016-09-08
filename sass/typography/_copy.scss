@@ -15,10 +15,10 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
-	font-size: $font__size-small;
-	line-height: $font__line-height-pre;
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 75%;
+	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -26,17 +26,17 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-size: $font__size-small;
-	font-family: $font__code;
+	font-size: 75%;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
+	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
 mark, ins {
-	background: $color__background-ins;
+	background: #fff9c0;
 	text-decoration: none;
 }
 

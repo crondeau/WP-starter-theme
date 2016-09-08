@@ -10,8 +10,8 @@ More information: http://codex.wordpress.org/Theme_Review#Licensing
 
 Author: Christine Rondeau
 Author URI: http://www.bluelimemedia.com
-
-
+*
+*
 */
 
 
@@ -20,49 +20,42 @@ $black: #404040;
 $white: #fff;
 $offwhite: #f0f1f1;
 
-$blue: #21759b;
-$orange: #CC8B14;
-$pale-yellow: #fff9c0;
-$green: #33B26E;
+$blue: #336699;
+$orange: #cc9900;
+$green: #339966;
 
-$grey: #5C6772;
+$grey: #333;
 $light-grey: #eee;
 $silver: #ccc;
 
 $color__background-body: $white;
-$color__background-screen: $offwhite;
 $color__background-hr: $silver;
-$color__background-button: $green;
-$color__background-button-hover: $grey;
-$color__background-pre: $light-grey;
-$color__background-ins: $pale-yellow;
+$color__text-main: $black;
+$color__heading: $grey;
+$color__border-default: $light-grey;
 
-$color__text-screen: $blue;
-$color__text-input: $grey;
-$color__text-input-focus: $black;
+// Links
 $color__link-background: $white;
 $color__link: $green;
 $color__link-visited: $green;
 $color__link-hover: $orange;
-$color__text-main: $black;
-$color__heading: $grey;
 
-$color__border-default: $light-grey;
+// Buttons
+$color__background-button: $green;
+$color__background-button-hover: $grey;
 $color__border-button: $green;
 $color__border-button-hover: $grey;
 $color__border-button-focus: $silver;
+
+// Inputs
+$color__text-input: $grey;
+$color__text-input-focus: $black;
 $color__border-input: $silver;
-$color__border-abbr: $silver;
 
-
-// FONT FAMILY
+// Fonts
 $font__sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font__serif: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
-
 $font__size-xlarge: 30px;
 $font__size-large: 22px;
 $font__size-medium: 18px;

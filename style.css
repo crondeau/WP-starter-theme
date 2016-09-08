@@ -10,8 +10,8 @@ More information: http://codex.wordpress.org/Theme_Review#Licensing
 
 Author: Christine Rondeau
 Author URI: http://www.bluelimemedia.com
-
-
+*
+*
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -114,7 +114,7 @@ a img {
   overflow: hidden;
 }
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-  background-color: #f0f1f1;
+  background-color: #f1f1f1;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   background-clip: padding-box;
@@ -174,7 +174,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 14px;
+  font-size: 75%;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -183,12 +183,12 @@ pre {
 }
 
 code, kbd, tt, var {
-  font-size: 14px;
+  font-size: 75%;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr, acronym {
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted #666;
   cursor: help;
 }
 
@@ -223,7 +223,7 @@ big {
 }
 
 a {
-  color: #33B26E;
+  color: #339966;
   -webkit-transition: 0.2s, ease-in-out;
   -moz-transition: 0.2s, ease-in-out;
   -ms-transition: 0.2s, ease-in-out;
@@ -231,10 +231,10 @@ a {
   transition: 0.2s, ease-in-out;
 }
 a:visited {
-  color: #33B26E;
+  color: #339966;
 }
 a:hover, a:focus, a:active {
-  color: #CC8B14;
+  color: #cc9900;
 }
 a.more-link, a.comment-reply-link {
   text-decoration: none;
@@ -246,7 +246,7 @@ a.more-link:after, a.comment-reply-link:after {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  color: #5C6772;
+  color: #333;
   font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
   font-weight: 400;
 }
@@ -546,7 +546,7 @@ td, th {
 }
 .main-navigation ul li:hover {
   color: #fff;
-  background: #33B26E;
+  background: #339966;
 }
 .main-navigation ul li:hover ul {
   display: block;
@@ -558,7 +558,7 @@ td, th {
   text-decoration: none;
 }
 .main-navigation ul li a:hover {
-  background: #33B26E;
+  background: #339966;
   color: #fff;
 }
 .main-navigation ul ul {
@@ -580,7 +580,7 @@ td, th {
   width: 200px;
 }
 .main-navigation ul ul a:hover, .main-navigation ul ul a:focus {
-  background: #33B26E;
+  background: #339966;
   color: #fff;
 }
 .main-navigation .current_page_item > a,
@@ -590,7 +590,7 @@ td, th {
 .main-navigation .current-menu-item > a:hover,
 .main-navigation .current_page_item > a:focus,
 .main-navigation .current-menu-item > a:focus {
-  background: #33B26E;
+  background: #339966;
   color: #fff;
 }
 .main-navigation ul ul .current_page_parent,
@@ -600,7 +600,7 @@ td, th {
 }
 .main-navigation ul ul .current_page_parent:hover,
 .main-navigation .current_page_parent .current_page_item > a:hover {
-  background: #33B26E;
+  background: #339966;
   color: #fff;
 }
 
@@ -707,7 +707,7 @@ td, th {
 
 .entry-meta,
 .entry-footer {
-  color: #5C6772;
+  color: #333;
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -889,8 +889,8 @@ select {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #33B26E;
-  border: 1px solid #33B26E;
+  background: #339966;
+  border: 1px solid #339966;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
@@ -906,8 +906,8 @@ input[type="submit"] {
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #5C6772;
-  border-color: #5C6772;
+  background: #333;
+  border-color: #333;
 }
 .button:focus, button:focus,
 input[type="button"]:focus,
@@ -930,7 +930,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #5C6772;
+  background: #333;
   -webkit-transition: 0.07s, ease-in;
   -moz-transition: 0.07s, ease-in;
   -ms-transition: 0.07s, ease-in;
@@ -969,7 +969,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #5C6772;
+  color: #333;
   border: 1px solid #ccc;
   -webkit-border-radius: 2px;
   border-radius: 2px;
