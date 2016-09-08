@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-
 <section class="site-main row">
 	<div class="container">
 
@@ -49,4 +48,5 @@ get_header(); ?>
 		
 	</div><!-- .container -->
 </section><!-- .site-main -->
+
 <?php get_footer(); ?>
