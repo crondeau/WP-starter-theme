@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying Comments.
+ * The template for displaying comments.
  *
- * The area of the page that contains both current comments
+ * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
  * @package blm_basic
@@ -20,13 +20,16 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php // You can start editing here -- including this comment! ?>
+	<?php // You can start editing here -- including this comment! 
 
-	<?php if ( have_comments() ) : ?>
+	if ( have_comments() ) : ?>
 		<h3 class="comments-title">
 			<?php
-				printf( _nx( 'One comment:', '%1$s comments:', get_comments_number(), 'comments title', 'blm_basic' ),
-					number_format_i18n( get_comments_number() ) );
+				printf( 
+					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'english-cucumber' ) ),
+					number_format_i18n( get_comments_number() ),
+					'<span>' . get_the_title() . '</span>'
+				);
 			?>
 		</h3>
 
@@ -35,7 +38,6 @@ if ( post_password_required() ) {
 				wp_list_comments( array(
 					'style'      => 'ol',
 					'short_ping' => true,
-                    'avatar_size'=> 50,
 				) );
 			?>
 		</ol><!-- .comment-list -->
@@ -43,20 +45,20 @@ if ( post_password_required() ) {
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
 			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'blm_basic' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&laquo; Previous', 'blm_basic' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Next &raquo;', 'blm_basic' ) ); ?></div>
+			<div class="nav-previous"><?php previous_comments_link( esc_html__( '&laquo; Previous', 'blm_basic' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( esc_html__( 'Next &raquo;', 'blm_basic' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
-		<?php endif; // check for comment navigation ?>
+		<?php endif; // check for comment navigation 
 
-	<?php endif; // have_comments() ?>
+	endif; // have_comments() 
 
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
+	// If comments are closed and there are comments, let's leave a little note, shall we?
+	if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+	
 		<p class="no-comments"><?php _e( 'Comments are Closed.', 'blm_basic' ); ?></p>
-	<?php endif; ?>
+		
+	<?php endif; 
 
-	<?php comment_form(); ?>
+	comment_form(); ?>
 
 </div><!-- #comments -->
