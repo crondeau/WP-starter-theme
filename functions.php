@@ -2,16 +2,11 @@
 /**
  * BLM Basic Starter Theme functions and definitions
  *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
  * @package blm_basic
  */
 
-
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
-}
 
 if ( ! function_exists( 'blm_theme_setup' ) ) :
 /**
@@ -40,9 +35,9 @@ function blm_theme_setup() {
 
 	// Add theme support for menus
 	register_nav_menus( array(
-		'primary' 	=> __( 'Main Menu', 'blm_basic' ),
-		'secondary' => __( 'Footer Menu', 'blm_basic' ),
-		'social' 	=> __( 'Social Media', 'blm_basic' ),
+		'primary' 	=> esc_html__( 'Main Menu', 'blm_basic' ),
+		'secondary' => esc_html__( 'Footer Menu', 'blm_basic' ),
+		'social' 	=> esc_html__( 'Social Media', 'blm_basic' ),
 	) );
 	
 	// Enable support for HTML5 markup.
@@ -53,6 +48,18 @@ function blm_theme_setup() {
 }
 endif; // blm_theme_setup
 add_action( 'after_setup_theme', 'blm_theme_setup' );
+
+/**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */
+function english_cucumber_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'blm_basic_content_width', 640 );
+}
+add_action( 'after_setup_theme', 'blm_basic_content_width', 0 );
 
 
 /**
