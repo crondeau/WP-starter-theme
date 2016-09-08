@@ -7,6 +7,14 @@
  * @package blm_basic
  */
 
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 780;
+}
+
 
 if ( ! function_exists( 'blm_theme_setup' ) ) :
 /**
@@ -49,18 +57,6 @@ function blm_theme_setup() {
 endif; // blm_theme_setup
 add_action( 'after_setup_theme', 'blm_theme_setup' );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function english_cucumber_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'blm_basic_content_width', 640 );
-}
-add_action( 'after_setup_theme', 'blm_basic_content_width', 0 );
-
 
 /**
  * Set up and register widget area
@@ -100,10 +96,10 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/excerpts.php';
 
 // remove junk from head
-remove_action('wp_head', 'rsd_link');
-remove_action('wp_head', 'wp_generator');
-remove_action('wp_head', 'wlwmanifest_link');
-remove_action('wp_head', 'feed_links_extra', 3);
-remove_action('wp_head', 'start_post_rel_link', 10, 0);
-remove_action('wp_head', 'parent_post_rel_link', 10, 0);
-remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);	
+// remove_action('wp_head', 'rsd_link');
+// remove_action('wp_head', 'wp_generator');
+// remove_action('wp_head', 'wlwmanifest_link');
+// remove_action('wp_head', 'feed_links_extra', 3);
+// remove_action('wp_head', 'start_post_rel_link', 10, 0);
+// remove_action('wp_head', 'parent_post_rel_link', 10, 0);
+// remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
