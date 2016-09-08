@@ -424,7 +424,7 @@ td, th {
 }
 
 .site-header {
-  background: rgba(64, 64, 64, 0.75);
+  background: #404040;
 }
 @media screen and (min-width: 48em) {
   .site-header {
