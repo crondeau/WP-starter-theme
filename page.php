@@ -1,6 +1,6 @@
 <?php
 /**
- * This template will be used to display page content.
+ * The template for displaying all pages.
  *
  * @package blm_basic
  */
