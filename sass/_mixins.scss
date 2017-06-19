@@ -144,6 +144,18 @@
 	align-items: $value;
 }
 
+@mixin flex-wrap($value: nowrap) {
+	// No Webkit Box fallback.
+	-webkit-flex-wrap: $value;
+	-moz-flex-wrap: $value;
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else { 
+		-ms-flex-wrap: $value; 
+	}
+	flex-wrap: $value;
+}
+
 
 @mixin order($int: 0) {
 	-webkit-box-ordinal-group: $int + 1;
