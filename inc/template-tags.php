@@ -176,4 +176,23 @@ function blm_basic_paging_nav() {
 endif;
 
 
+if ( ! function_exists( 'blm_custom_excerpt_more' ) && ! is_admin() ) :
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Read more' link.
+ *
+ * @since Twenty Fifteen 1.0 (Borrowing once again...)
+ *
+ */
+function blm_custom_excerpt_more( $more ) {
+	$link = sprintf( '<a href="%1$s" class="more-link">%2$s</a>',
+		esc_url( get_permalink( get_the_ID() ) ),
+		/* translators: %s: Name of current post */
+		sprintf( __( 'Read more %s', 'blm_basic' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+		);
+	return ' &hellip; ' . $link;
+}
+add_filter( 'excerpt_more', 'blm_custom_excerpt_more' );
+endif;
+
+
 ?>
