@@ -62,7 +62,7 @@
 }
 
 // Flexbox 
-//https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss
+//https://github.com/mastastealth/sass-flex-mixin/blob/master/_flex.scss
 @mixin flexbox {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -89,6 +89,18 @@
 	-moz-flex-direction: $value;
 	-ms-flex-direction: $value;
 	flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+	// No Webkit Box fallback.
+	-webkit-flex-wrap: $value;
+	-moz-flex-wrap: $value;
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else { 
+		-ms-flex-wrap: $value; 
+	}
+	flex-wrap: $value;
 }
 
 @mixin justify-content($value: flex-start) {
@@ -144,18 +156,19 @@
 	align-items: $value;
 }
 
-@mixin flex-wrap($value: nowrap) {
-	// No Webkit Box fallback.
-	-webkit-flex-wrap: $value;
-	-moz-flex-wrap: $value;
-	@if $value == nowrap {
-		-ms-flex-wrap: none;
-	} @else { 
-		-ms-flex-wrap: $value; 
+@mixin align-self($value: auto) {
+	// No Webkit Box Fallback.
+	-webkit-align-self: $value;
+	-moz-align-self: $value;
+	@if $value == flex-start {
+		-ms-flex-item-align: start;
+	} @else if $value == flex-end {
+		-ms-flex-item-align: end;
+	} @else {
+		-ms-flex-item-align: $value;
 	}
-	flex-wrap: $value;
+	align-self: $value;
 }
-
 
 @mixin order($int: 0) {
 	-webkit-box-ordinal-group: $int + 1;
@@ -164,9 +177,6 @@
 	-ms-flex-order: $int;
 	order: $int;
 }
-
-
-
 
 @mixin flex-basis($value: auto) {
 	-webkit-flex-basis: $value;
@@ -192,18 +202,4 @@
 	-moz-flex: $fg $fs $fb;
 	-ms-flex: $fg $fs $fb;
 	flex: $fg $fs $fb;
-}
-
-@mixin align-self($value: auto) {
-	// No Webkit Box Fallback.
-	-webkit-align-self: $value;
-	-moz-align-self: $value;
-	@if $value == flex-start {
-		-ms-flex-item-align: start;
-	} @else if $value == flex-end {
-		-ms-flex-item-align: end;
-	} @else {
-		-ms-flex-item-align: $value;
-	}
-	align-self: $value;
 }
