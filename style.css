@@ -530,18 +530,15 @@ td, th {
 }
 
 .main-navigation ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .main-navigation ul {
+    text-align: right;
+  }
 }
 .main-navigation ul li {
+  display: inline-block;
   position: relative;
 }
 .main-navigation ul li:hover {
@@ -554,7 +551,7 @@ td, th {
 .main-navigation ul li a {
   color: #fff;
   display: block;
-  padding: 5px;
+  padding: 5px 20px;
   text-decoration: none;
 }
 .main-navigation ul li a:hover {
@@ -569,6 +566,7 @@ td, th {
   left: 0;
   padding: 0;
   position: absolute;
+  text-align: left;
   z-index: 99999;
 }
 .main-navigation ul ul ul {
@@ -641,8 +639,10 @@ td, th {
   .main-navigation ul {
     display: none;
     padding-left: 0;
+    text-align: left;
   }
   .main-navigation ul li {
+    display: block;
     border-top: 1px solid #eee;
   }
   .main-navigation ul li a {

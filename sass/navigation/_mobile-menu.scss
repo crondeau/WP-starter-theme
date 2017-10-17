@@ -6,7 +6,9 @@
 		ul {
 			display: none;
 			padding-left: 0;
+			text-align: left;
 			li {
+				display: block;
 				border-top: 1px solid $color__border-default;
 				a {
 					background: $color__text-main;

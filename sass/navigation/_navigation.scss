@@ -1,9 +1,12 @@
 .main-navigation {
 	ul {
 		@extend .no-padding-list;
-		@include flexbox;
-		@include justify-content(space-between);
+		text-align: center;
+		@media screen and (min-width: $tablet-portrait) {
+			text-align: right;
+		}
 		li {
+			display: inline-block;
 		    position: relative;
 			&:hover {
 			    color: $color__link-background;
@@ -15,7 +18,7 @@
 			a {
 				color: $color__link-background;
 				display: block;
-				padding: 5px;
+				padding: 5px 20px;
 				text-decoration: none;
 				&:hover {
 					background: $color__link;
@@ -32,6 +35,7 @@
 		left: 0;
 		padding: 0;
 	    position: absolute;
+		text-align: left;
 	    z-index: 99999;
 		ul {
 		    top: 0;
@@ -69,6 +73,4 @@
 }
 
 @import "_menu-toggle";
-
 @import "_mobile-menu";
-
