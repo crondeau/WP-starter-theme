@@ -27,7 +27,7 @@
 		<div class="container header-wrapper">	
 		
 			<div id="branding" class="site-branding">
-			<?php if ( is_front_page() && is_home() ) : ?>
+			<?php if ( is_front_page() || is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<?php else: ?>
