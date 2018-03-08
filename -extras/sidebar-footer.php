@@ -21,32 +21,32 @@
 		return;
 	// If we get this far, we have widgets. Let do this.
 ?>
-<div id="footer-widget-area" class="footer-sidebar row">
-		<div class="container" role="complementary">
+<div id="footer-widget-area" class="site__footer--widgets row">
+	<div class="container" role="complementary">
 
-			<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+		<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 
-				<?php dynamic_sidebar( 'footer-1' ); ?>
+			<?php dynamic_sidebar( 'footer-1' ); ?>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-			<?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+		<?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
 
-				<?php dynamic_sidebar( 'footer-2' ); ?>
+			<?php dynamic_sidebar( 'footer-2' ); ?>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-			<?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
-				
-				<?php dynamic_sidebar( 'footer-3' ); ?>
+		<?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+			
+			<?php dynamic_sidebar( 'footer-3' ); ?>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-			<?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
-				
-				<?php dynamic_sidebar( 'footer-4' ); ?>
+		<?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
+			
+			<?php dynamic_sidebar( 'footer-4' ); ?>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-		</div>
+	</div>
 </div><!-- #footer-widget-area -->
