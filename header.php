@@ -23,25 +23,25 @@
 <div id="page" class="site">	
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 
-	<header id="masthead" class="site-header row" role="banner">	
-		<div class="container header-wrapper">	
+	<header id="masthead" class="site__header row" role="banner">	
+		<div class="site__header--wrapper">	
 		
-			<div id="branding" class="site-branding">
+			<div id="branding" class="site__branding">
 			<?php if ( is_front_page() || is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<h1 class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site__description"><?php bloginfo( 'description' ); ?></h2>
 			<?php else: ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
-				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				<p class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site__description"><?php bloginfo( 'description' ); ?></p>
 			<?php endif; ?>
 			</div>
 		
-			<nav id="site-navigation" class="site-navigation main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'blm_basic' ); ?></button>
+			<nav id="site__nav" class="site__nav main__nav" role="navigation">
+				<button class="main__nav--toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'blm_basic' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>	
 
 		</div>	
 	</header>
 
-	<div id="content" class="site-content">
+	<div id="content" class="site__content">

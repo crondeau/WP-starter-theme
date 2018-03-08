@@ -1,24 +1,25 @@
-.site-header { 
+.site__header { 
 	background: rgba($color__text-main, 1);
 	@media screen and (min-width: $tablet-portrait) {
 		padding: 20px 0;
 	}
 }
-.header-wrapper {
+.site__header--wrapper {
+	@extend .container;
 	@include flexbox;
 	@include flex-direction(column);
-		.site-branding {
+		.site__branding {
 			@include order(2);
 		}
-		.site-navigation {
+		.site__nav {
 			@include order(1);
 		}
 	@media screen and (min-width: $phone-wide-landscape) {
-		.site-branding {
+		.site__branding {
 			width: 100%;
 			@include order(1);
 		}
-		.site-navigation {
+		.site__nav {
 			width: 100%;
 			@include order(2);
 		}
@@ -26,10 +27,10 @@
 	@media screen and (min-width: $tablet-portrait) {
 		@include flex-direction(row);
 		@include align-items(center);
-		.site-branding {
+		.site__branding {
 			width: 30%;
 		}
-		.site-navigation {
+		.site__nav {
 			width: 70%;
 		}
 	}

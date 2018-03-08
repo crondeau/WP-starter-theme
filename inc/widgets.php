@@ -7,7 +7,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear on your blog section.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h4 class="sidebar-title">',
+		'before_title' 	=> '<h4 class="title__sidebar">',
 		'after_title' 	=> '</h4>'
 	) );
 		
@@ -19,7 +19,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear on your pages.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h4 class="sidebar-title">',
+		'before_title' 	=> '<h4 class="title__sidebar">',
 		'after_title' 	=> '</h4>'
 	) );
 		
@@ -29,7 +29,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear in the first footer widget area.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h4 class="footer-title">',
+		'before_title' 	=> '<h4 class="title__footer">',
 		'after_title' 	=> '</h4>'
 	) );
 		
@@ -39,7 +39,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear in the second footer widget area.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title'	=> '<h4 class="footer-title">',
+		'before_title'	=> '<h4 class="title__footer">',
 		'after_title' 	=> '</h4>'
 	) );
 	register_sidebar( array(
@@ -48,7 +48,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear in the third footer widget area.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h4 class="footer-title">',
+		'before_title' 	=> '<h4 class="title__footer">',
 		'after_title' 	=> '</h4>'
 	) );
 		
@@ -58,7 +58,7 @@ function blm_basic_widgets_init() {
 		'description' 	=> esc_html__( 'The following widgets will appear in the fourth footer widget area.', 'blm_basic' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h4 class="footer-title">',
+		'before_title' 	=> '<h4 class="title__footer">',
 		'after_title' 	=> '</h4>'
 	) ); */
 }

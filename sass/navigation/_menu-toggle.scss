@@ -1,11 +1,11 @@
-.menu-toggle {
+.main__nav--toggle {
     cursor: pointer;
 	display: none;
 	padding: 10px;
 }
 
 @media screen and (max-width: $phone-wide-landscape) {
-    .menu-toggle {
+    .main__nav--toggle {
 		background: $color__text-main;
 		border: none;
 		color: $color__link-background;

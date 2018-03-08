@@ -15,7 +15,7 @@
 		</div>	
 		
 	    <div id="categories" class="widget">
-			<h4 class="sidebar-title">Categories</h4>
+			<h4 class="title__sidebar">Categories</h4>
 			<ul>
 				<?php wp_list_categories( 'title_li=' ); ?>
 			</ul>

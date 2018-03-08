@@ -1,8 +1,8 @@
 @media screen and (max-width: $phone-wide-landscape) {
-    .main-navigation.toggled .nav-menu {
+    .main__nav.toggled .nav-menu {
         display: block;
     }
-    .main-navigation {
+    .main__nav {
 		ul {
 			display: none;
 			padding-left: 0;

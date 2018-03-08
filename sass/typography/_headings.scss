@@ -24,7 +24,21 @@ h2 {
 	}
 }
 
-h3, h4, h5, h6 {
+h3 {
 	font-size: $font__size-medium;
 	margin: 15px 0;
+} 
+
+h4 {
+	font-size: $font__size-medium;
+	margin: 15px 0;
+	&.title__sidebar {
+		border-bottom: 1px solid $color__border-default;
+		text-transform: uppercase;	
+	}
 }
+
+h5, h6 {
+	font-size: $font__size-default;
+	margin: 10px 0;
+} 

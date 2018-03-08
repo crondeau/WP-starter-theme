@@ -5,7 +5,8 @@
 }
 .container {
 	@include center-block;
-	@include clearfix;	
+	@include clearfix;
+	position: relative;	
 	width: 100%;
 	max-width: $max-width;
 }
