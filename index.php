@@ -7,11 +7,10 @@
 
 get_header(); ?>
 
-<section class="site-main row">
+<section class="site__main row">
 	<div class="container">
 
-		<div id="primary" class="primary-content left-block">
-			<main id="main" class="content-area" role="main">
+		<main id="primary" class="content block__left">
 		
 			<?php if (have_posts()) : while (have_posts()) : the_post(); 
 				
@@ -21,11 +20,10 @@ get_header(); ?>
 	
 			<?php blm_basic_paging_nav(); ?>
 			
-			</main><!-- #main -->
-		</div><!-- #primary -->
+		</main><!-- #primary -->
 		
 		<?php get_sidebar(); ?>
 		
 	</div><!-- .container -->
-</section><!-- .site-main -->
+</section><!-- .site__main -->
 <?php get_footer(); ?>

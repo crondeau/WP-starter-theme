@@ -9,32 +9,36 @@
 	width: 100%;
 	max-width: $max-width;
 }
+.container--narrow {
+	@extend .container;
+	max-width: $max-content-width;
+}
 
-.site-main {
+.site__main {
 	padding: 30px 2%;
 	@media screen and (min-width: $max-width) {
 		padding: 30px 0;
 	}
 }
 
-.left-block {
+.block__left {
 	float: left;
 }
 
-.right-block {
+.block__right {
 	float: left;
 	@media screen and (min-width: $phone-wide-landscape) {
 		float: right;
 	}
 }
 
-.primary-content {	
+.content {	
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
 		width: 65%;
 	}
 }
-.primary-sidebar {
+.sidebar {
 	width: 100%;	
 	@media screen and (min-width: $phone-wide-landscape) {
 		width: 25%;

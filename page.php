@@ -7,33 +7,19 @@
 
 get_header(); ?>
 
-<section class="site-main row">
-	<div class="container">
+<main class="site__main row">
+	<div class="container--narrow">
 
-		<div id="primary" class="primary-content left-block">
-			<main id="main" class="content-area" role="main">
-		
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header><!-- .entry-header -->
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+			
+			<div class="content__area">
+				<?php the_content(); ?>
+			</div><!-- .content__area -->
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
-	
-				</article><!-- #post-## -->
+		<?php endwhile; ?>
 
-			<?php endwhile; ?>
-		
-			</main><!-- #main -->
-		</div><!-- #primary -->
-
-		<?php get_sidebar(); ?>
-		
 	</div><!-- .container -->
-</section><!-- .site-main -->
+</main><!-- .site__main -->
 <?php get_footer(); ?>

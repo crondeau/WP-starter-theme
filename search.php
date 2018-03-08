@@ -7,16 +7,12 @@
 
 get_header(); ?>
 
-<section class="site-main row">
+<section class="site__main row">
 	<div class="container">
 
-		<div id="primary" class="primary-content left-block">
-			<main id="main" class="content-area" role="main">
-				
-				
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
+		<main id="primary" class="content block__left">
+
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				
 			<?php if ( have_posts() ) : ?>	
 				
@@ -40,11 +36,10 @@ get_header(); ?>
 	
 	  	 <?php endif; ?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+		</main><!-- #primary -->
 
 		<?php get_sidebar(); ?>
 		
 	</div><!-- .container -->
-</section><!-- .site-main -->
+</section><!-- .site__main -->
 <?php get_footer(); ?>

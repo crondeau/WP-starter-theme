@@ -8,7 +8,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="footer" class="row site-footer" role="contentinfo">
+	<footer id="footer" class="row site__footer" role="contentinfo">
 		<div class="container">
 
 			<p class="small-text">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>

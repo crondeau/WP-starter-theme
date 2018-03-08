@@ -7,46 +7,42 @@
 
 get_header(); ?>
 
-<section class="site-main row">
+<section class="site__main row">
 	<div class="container">
 
-		<div id="primary" class="primary-content left-block">
-			<main id="main" class="content-area" role="main">
+		<main id="primary" class="content block__left">
 		
-			<?php while (have_posts()) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-						<div class="entry-meta">
-							<?php blm_basic_posted_on(); ?>
-						</div>
-					</header><!-- .entry-header -->
-	
-					<div class="entry-content">
-						<?php the_content(); ?>
-					</div><!-- .entry-content -->
-	
-					<nav class="navigation post-navigation" role="navigation">
-						<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h1>
-						<div class="nav-previous left-block"><?php previous_post_link( '%link' ); ?></div>
-						<div class="nav-next right-block"><?php next_post_link( '%link' ); ?></div>
-					</nav>
-	
-				</article><!-- #post-## -->
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<div class="entry__meta">
+						<?php blm_basic_posted_on(); ?>
+					</div>
 
-				<?php // If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-			
-				endif; endwhile; ?>	
+				<div class="content__area">
+					<?php the_content(); ?>
+				</div>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+				<nav class="navigation post-navigation" role="navigation">
+					<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h1>
+					<div class="nav-previous block__left"><?php previous_post_link( '%link' ); ?></div>
+					<div class="nav-next block__right"><?php next_post_link( '%link' ); ?></div>
+				</nav>
+
+			</article><!-- #post-## -->
+
+			<?php // If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+		
+			endif; endwhile; ?>	
+
+		</main><!-- #primary -->
 
 		<?php get_sidebar(); ?>
 		
 	</div><!-- .container -->
-</section><!-- .site-main -->
+</section><!-- .site__main -->
 
 <?php get_footer(); ?>

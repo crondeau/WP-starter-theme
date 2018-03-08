@@ -138,31 +138,33 @@ td, th { padding: 3px 5px; }
 ---------------------------*/
 .row { width: 100%; }
 
-.container { display: block; margin: 0 auto; width: 100%; max-width: 1200px; }
+.container, .container--narrow { display: block; margin: 0 auto; width: 100%; max-width: 1200px; }
 
-.container:before, .container:after { content: ""; display: table; }
+.container:before, .container--narrow:before, .container:after, .container--narrow:after { content: ""; display: table; }
 
-.container:after { clear: both; }
+.container:after, .container--narrow:after { clear: both; }
 
-.site-main { padding: 30px 2%; }
+.container--narrow { max-width: 800px; }
 
-@media screen and (min-width: 1200px) { .site-main { padding: 30px 0; } }
+.site__main { padding: 30px 2%; }
 
-.left-block { float: left; }
+@media screen and (min-width: 1200px) { .site__main { padding: 30px 0; } }
 
-.right-block { float: left; }
+.block__left { float: left; }
 
-@media screen and (min-width: 37.5em) { .right-block { float: right; } }
+.block__right { float: left; }
 
-.primary-content { width: 100%; }
+@media screen and (min-width: 37.5em) { .block__right { float: right; } }
 
-@media screen and (min-width: 37.5em) { .primary-content { width: 65%; } }
+.content { width: 100%; }
 
-.primary-sidebar { width: 100%; }
+@media screen and (min-width: 37.5em) { .content { width: 65%; } }
 
-@media screen and (min-width: 37.5em) { .primary-sidebar { width: 25%; } }
+.sidebar { width: 100%; }
 
-.fourofour-content { display: block; margin: 0 auto; max-width: 500px; padding-top: 50px; padding-bottom: 200px; width: 100%; }
+@media screen and (min-width: 37.5em) { .sidebar { width: 25%; } }
+
+.content__fourofour { display: block; margin: 0 auto; max-width: 500px; padding-top: 50px; padding-bottom: 200px; width: 100%; }
 
 .site-header { background: #404040; }
 
@@ -242,7 +244,7 @@ td, th { padding: 3px 5px; }
 
 .post:first-of-type { border: none; padding-top: 0; }
 
-.entry-meta, .entry-footer { color: #333; font-size: 14px; margin-bottom: 15px; }
+.entry__meta, .entry__meta--footer { color: #333; font-size: 14px; margin-bottom: 15px; }
 
 .cat-links, .tags-links, .comments-link { margin-right: 1em; }
 
@@ -313,15 +315,15 @@ td, th { padding: 3px 5px; }
 
 .sidebar-title { border-bottom: 1px solid #eee; text-transform: uppercase; }
 
-.primary-sidebar ul { list-style: none; margin-left: 0.5em; }
+.sidebar ul { list-style: none; margin-left: 0.5em; }
 
-.primary-sidebar ul li { padding: 0.5em 0; font-size: 14px; }
+.sidebar ul li { padding: 0.5em 0; font-size: 14px; }
 
-.primary-sidebar a { text-decoration: none; }
+.sidebar a { text-decoration: none; }
 
 /* Footer area 
 ---------------------*/
-.site-footer { padding: 30px 0; text-align: center; }
+.site__footer { padding: 30px 0; text-align: center; }
 
 button, input, select, textarea { font-size: 100%; /* Corrects font size not being inherited in all browsers */ margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */ vertical-align: baseline; /* Improves appearance and consistency in all browsers */ }
 
@@ -365,7 +367,7 @@ textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 embed, iframe, object { max-width: 100%; }
 
 /* images within main page */
-.site-main img { height: auto; max-width: 100%; }
+.site__main img { height: auto; max-width: 100%; }
 
 .aligncenter, .alignleft, .alignright { display: block; margin: 0 auto; margin-top: 1em; margin-bottom: 1em; }
 

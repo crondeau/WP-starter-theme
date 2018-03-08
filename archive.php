@@ -7,30 +7,26 @@
 
 get_header(); ?>
 
-<section class="site-main row">
+<section class="site__main row">
 	<div class="container">
 
-		<div id="primary" class="primary-content left-block">
-			<main id="main" class="content-area" role="main">
+		<main id="primary" class="content block__left">
 		
-			<?php if (have_posts()) : ?>
-				<header class="page-header">
-					<h1 class="page-title"><?php the_archive_title(); ?></h1>
-				</header>
-	
-				<?php while (have_posts()) : the_post(); 
+		<?php if (have_posts()) : ?>
+			<h1 class="page-title"><?php the_archive_title(); ?></h1>
+
+			<?php while (have_posts()) : the_post(); 
 			
-					get_template_part( 'content' ); 
+				get_template_part( 'content' ); 
 	
-		 	 	endwhile; endif; ?>
+		 	 endwhile; endif; ?>
 	
-				<?php blm_basic_paging_nav(); ?>
+		<?php blm_basic_paging_nav(); ?>
 		  
-			</main><!-- #main -->
-		</div><!-- #primary -->
+		</main><!-- #primary -->
 
 		<?php get_sidebar(); ?>
 		
 	</div><!-- .container -->
-</section><!-- .site-main -->
+</section><!-- .site__main -->
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@
  * @package blm_basic
  */
 ?>
-<aside id="secondary" class="primary-sidebar right-block" role="complementary">
+<aside id="secondary" class="sidebar block__right" role="complementary">
 	
 	<?php if ( ! dynamic_sidebar( 'primary' ) ) : ?>
 
