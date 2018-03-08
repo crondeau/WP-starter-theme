@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php while (have_posts()) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="title--post"><?php the_title(); ?></h1>
 					<div class="entry__meta">
 						<?php blm_basic_posted_on(); ?>
 					</div>

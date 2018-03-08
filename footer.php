@@ -11,7 +11,7 @@
 	<footer id="footer" class="row site__footer" role="contentinfo">
 		<div class="container">
 
-			<p class="small-text">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+			<p class="text--small">&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
 
 		</div>
 	</footer>

@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="primary" class="content block__left">
 		
 		<?php if (have_posts()) : ?>
-			<h1 class="page-title"><?php the_archive_title(); ?></h1>
+			<h1 class="title__page--archive"><?php the_archive_title(); ?></h1>
 
 			<?php while (have_posts()) : the_post(); 
 			

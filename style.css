@@ -48,9 +48,9 @@ a img { border: 0; }
 
 body, button, input, select, textarea { color: #404040; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
 
-p { margin-bottom: 1em; }
+p { margin-bottom: 10px; }
 
-.small-text { font-size: 14px; }
+.text--small { font-size: 14px; }
 
 b, strong { font-weight: bold; }
 
