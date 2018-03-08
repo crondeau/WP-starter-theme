@@ -1,23 +1,38 @@
-.post-navigation {
+.post__nav {
+	@include flexbox;
+	@include flex-wrap(wrap);
 	font-size: $font__size-small;
-	padding: 2em 0;
+	padding: 20px 0;
 	a {
+		display: block;
+		padding: 10px 0;
 		text-decoration: none;
 	}
-	.nav-previous {
+} 
+
+.post__nav--previous {
+	text-align: center;
+	width: 100%;
+	@media screen and (min-width: $phone-wide-landscape) {
+		text-align: left;
 		width: 50%;
-		a:before {
-			 content:"\00ab";
-			 padding-right: 5px;
-		}
 	}
-	.nav-next {
+	
+	a:before {
+		 content:"\00ab";
+		 padding-right: 5px;
+	}
+}
+.post__nav--next {
+	text-align: center;
+	width: 100%;
+	@media screen and (min-width: $phone-wide-landscape) {
 		text-align: right;
 		width: 50%;
-		a:after {
-			 content:"\00bb";
-			 padding-left: 5px;
-		}
 	}
-} 
+	a:after {
+		 content:"\00bb";
+		 padding-left: 5px;
+	}
+}
 

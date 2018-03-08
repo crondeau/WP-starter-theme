@@ -48,7 +48,7 @@ function blm_basic_entry_meta() {
 
 		$categories_list = get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'blm_basic' ) );
 		if ( $categories_list && blm_basic_categorized_blog() ) {
-			printf( '<span class="cat-links">%1$s %2$s</span>',
+			printf( '<span class="links__cat">%1$s %2$s</span>',
 				_x( 'Categories: ', 'Used before category names.', 'blm_basic' ),
 				$categories_list
 			);
@@ -56,7 +56,7 @@ function blm_basic_entry_meta() {
 
 		$tags_list = get_the_tag_list( '', _x( ', ', 'Used between list items, there is a space after the comma.', 'blm_basic' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">%1$s %2$s</span>',
+			printf( '<span class="links__tag">%1$s %2$s</span>',
 				_x( 'Tags:', 'Used before tag names.', 'blm_basic' ),
 				$tags_list
 			);
@@ -64,7 +64,7 @@ function blm_basic_entry_meta() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<span class="links_comment">';
 		comments_popup_link( __( 'Leave a comment', 'blm_basic' ), __( '1 Comment', 'blm_basic' ), __( '% Comments', 'blm_basic' ) );
 		echo '</span>';
 	}
@@ -166,8 +166,8 @@ function blm_basic_paging_nav() {
 	if ( $links ) :
 
 	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'blm_basic' ); ?></h1>
+	<nav class="navigation paging-nav" role="navigation">
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'blm_basic' ); ?></h2>
 			<?php echo $links; ?>
 	</nav><!-- .navigation -->
 	<?php
@@ -184,7 +184,7 @@ if ( ! function_exists( 'blm_custom_excerpt_more' ) && ! is_admin() ) :
  *
  */
 function blm_custom_excerpt_more( $more ) {
-	$link = sprintf( '<a href="%1$s" class="more-link">%2$s</a>',
+	$link = sprintf( '<a href="%1$s" class="link__more">%2$s</a>',
 		esc_url( get_permalink( get_the_ID() ) ),
 		/* translators: %s: Name of current post */
 		sprintf( __( 'Read more %s', 'blm_basic' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )

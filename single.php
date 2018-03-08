@@ -24,10 +24,10 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</div>
 
-				<nav class="navigation post-navigation" role="navigation">
-					<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h1>
-					<div class="nav-previous block__left"><?php previous_post_link( '%link' ); ?></div>
-					<div class="nav-next block__right"><?php next_post_link( '%link' ); ?></div>
+				<nav class="navigation post__nav" role="navigation">
+					<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'blm_basic' ); ?></h2>
+					<div class="post__nav--previous"><?php previous_post_link( '%link' ); ?></div>
+					<div class="post__nav--next"><?php next_post_link( '%link' ); ?></div>
 				</nav>
 
 			</article><!-- #post-## -->

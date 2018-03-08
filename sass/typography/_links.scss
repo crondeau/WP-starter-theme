@@ -9,7 +9,7 @@ a {
 	&:active {
 		color: $color__link-hover;
 	}
-	&.more-link {
+	&.link__more {
 		text-decoration: none;
 		&:after {
 			content: "\00bb";
@@ -17,6 +17,6 @@ a {
 		}
 	}
 	&.comment-reply-link {
-		@extend .more-link;
+		@extend .link__more;
 	}
 }
