@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<main id="primary" class="content block__left">
 
-			<h1 class="title--page--searchresults"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="title__page--searchresults"><?php printf( __( 'Search Results for: %s', 'blm_basic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				
 			<?php if ( have_posts() ) : ?>	
 				

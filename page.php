@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<h1 class="title--page"><?php the_title(); ?></h1>
+			<h1 class="title__page"><?php the_title(); ?></h1>
 			
 			<div class="content__area">
 				<?php the_content(); ?>
