@@ -1,14 +1,18 @@
 /* Search Form
 -------------------------------------------*/
-.search-form {
+.search__form {
 	@include flexbox;
-	input {
-		@include border-radius(0);
-		&.search-field {
-			width: 100%;
-		}
-	}	
+	max-width: 400px;
 	label {
 		@include flex(1);
 	}		
+}
+
+.search__form--input {
+	@include border-radius(0);
+	width: 100%;
+}
+
+.search__form--submit {
+	@include border-radius(0);
 }

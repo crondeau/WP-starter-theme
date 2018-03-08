@@ -34,6 +34,8 @@ get_header(); ?>
 		
 				   <p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
 				   
+				   <?php get_search_form(); ?>
+				   
 			   </article>
 	
 	  	 <?php endif; ?>
