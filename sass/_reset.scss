@@ -52,7 +52,7 @@ table {
 	border-spacing: 0;
 }
 caption, th, td {
-	font-weight: normal;
+	font-weight: $font__weight--normal;
 	text-align: left;
 }
 blockquote:before, blockquote:after,

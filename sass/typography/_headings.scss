@@ -2,11 +2,11 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	color: $color__heading;
 	font-family: $font__heading;
-	font-weight: 400;
+	font-weight: $font__weight--bold;
 }
 
 h1 {
-	font-size: $font__size-xlarge;
+	font-size: $font__size--xlarge;
 	margin: 0 0 20px;
 	&.site-title {
 		margin: 0;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-	font-size: $font__size-large;
+	font-size: $font__size--large;
 	margin: 15px 0;
 	a {
 		text-decoration: none;
@@ -25,12 +25,12 @@ h2 {
 }
 
 h3 {
-	font-size: $font__size-medium;
+	font-size: $font__size--medium;
 	margin: 15px 0;
 } 
 
 h4 {
-	font-size: $font__size-medium;
+	font-size: $font__size--medium;
 	margin: 15px 0;
 	&.title__sidebar {
 		border-bottom: 1px solid $color__border-default;
@@ -39,6 +39,6 @@ h4 {
 }
 
 h5, h6 {
-	font-size: $font__size-default;
+	font-size: $font__size--default;
 	margin: 10px 0;
 } 

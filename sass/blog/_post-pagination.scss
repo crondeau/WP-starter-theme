@@ -15,7 +15,7 @@
 		padding: 3px 8px;
 		text-decoration: none;
 		&.current {
-			font-weight: bold;
+			font-weight: $font__weight--bold;
 		}
 	}
 }

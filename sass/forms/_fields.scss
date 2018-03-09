@@ -30,7 +30,7 @@ textarea {
 	border: 1px solid $color__border-input;
 	@include border-radius(2px);
 	@include box-sizing(border-box);
-	font-size: $font__size-small;
+	font-size: $font__size--small;
 	line-height: 1;
 	padding: 10px 5px;
 	-webkit-appearance: none;

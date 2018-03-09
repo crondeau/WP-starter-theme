@@ -1,7 +1,7 @@
 .post__nav {
 	@include flexbox;
 	@include flex-wrap(wrap);
-	font-size: $font__size-small;
+	font-size: $font__size--small;
 	padding: 20px 0;
 	a {
 		display: block;

@@ -2,7 +2,7 @@
 Theme Name: Bluelime Basic Starter theme
 Theme URI: http://www.bluelimemedia.com
 Description: Responsive Starter theme with Sass created by Bluelime Media. 
-Version: 1.0
+Version: 2.0
 
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -58,12 +58,16 @@ $font__sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font__serif: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
 $font__heading: 'Droid Serif', Georgia, Times, 'Times New Roman', serif;
 $font__line-height-body: 1.5;
-$font__size-xlarge: 30px;
-$font__size-large: 22px;
-$font__size-medium: 18px;
-$font__size-default: 16px;
-$font__size-small: 14px;
 
+$font__size--xlarge: 30px;
+$font__size--large: 22px;
+$font__size--medium: 18px;
+$font__size--default: 16px;
+$font__size--small: 14px;
+
+$font__weight--light: 300;
+$font__weight--normal: 400;
+$font__weight--bold: 700;
 
 // Media queries
 $desktop-wide:          75.00em;  // 1200px
@@ -78,28 +82,15 @@ $max-width: 1200px;
 $max-content-width: 800px;
 
 @import "_mixins";
-
 @import "_reset";
-
 @import "_accessibility";
-
 @import "typography/typography";
-
 @import "elements/elements";
-
 @import "layout/layout";
-
 @import "header/header";
-
 @import "navigation/navigation";
-
 @import "blog/blog";
-
 @import "sidebar/sidebar";
-
 @import "footer/footer";
-
 @import "forms/forms";
-
 @import "media/media";
-

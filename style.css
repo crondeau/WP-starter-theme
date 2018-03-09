@@ -2,7 +2,7 @@
 Theme Name: Bluelime Basic Starter theme
 Theme URI: http://www.bluelimemedia.com
 Description: Responsive Starter theme with Sass created by Bluelime Media. 
-Version: 1.0
+Version: 2.0
 
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,7 +29,7 @@ ol, ul { list-style: none; }
 
 table { border-collapse: separate; border-spacing: 0; }
 
-caption, th, td { font-weight: normal; text-align: left; }
+caption, th, td { font-weight: 400; text-align: left; }
 
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 
@@ -44,7 +44,7 @@ a img { border: 0; }
 /* Text meant only for screen readers */
 .screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
 
-.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus { background-color: #f1f1f1; -webkit-border-radius: 3px; border-radius: 3px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-weight: bold; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar */ }
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus { background-color: #f1f1f1; -webkit-border-radius: 3px; border-radius: 3px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-weight: 700; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar */ }
 
 body, button, input, select, textarea { color: #404040; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
 
@@ -52,7 +52,7 @@ p { margin-bottom: 10px; }
 
 .text--small { font-size: 14px; }
 
-b, strong { font-weight: bold; }
+b, strong { font-weight: 700; }
 
 dfn, cite, em, i { font-style: italic; }
 
@@ -94,7 +94,7 @@ a.button:hover { background: #333; border-color: #333; }
 
 a.button:focus, a.button:active { border-color: #ccc; }
 
-h1, h2, h3, h4, h5, h6 { clear: both; color: #333; font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { clear: both; color: #333; font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif; font-weight: 700; }
 
 h1 { font-size: 30px; margin: 0 0 20px; }
 
@@ -130,7 +130,7 @@ ol { list-style: decimal; }
 
 li > ul, li > ol { margin-bottom: 0; margin-left: 1.5em; }
 
-dt { font-weight: bold; }
+dt { font-weight: 700; }
 
 dd { margin: 0 1.5em 1.5em; }
 
@@ -142,7 +142,7 @@ figure { margin: 0; }
 
 table { margin: 0 0 1.5em; width: 100%; }
 
-th { font-weight: bold; }
+th { font-weight: 700; }
 
 td, th { padding: 3px 5px; }
 
@@ -270,7 +270,7 @@ td, th { padding: 3px 5px; }
 
 .paging-nav a.page-numbers, .paging-nav span.page-numbers { padding: 3px 8px; text-decoration: none; }
 
-.paging-nav a.page-numbers.current, .paging-nav span.page-numbers.current { font-weight: bold; }
+.paging-nav a.page-numbers.current, .paging-nav span.page-numbers.current { font-weight: 700; }
 
 .post__nav { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; font-size: 14px; padding: 20px 0; }
 
