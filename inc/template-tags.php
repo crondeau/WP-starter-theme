@@ -1,6 +1,5 @@
 <?php
 
-
 if ( ! function_exists( 'blm_basic_posted_on' ) ) :
 	
 /**
@@ -32,8 +31,6 @@ function blm_basic_posted_on() {
 
 }
 endif;
-
-
 
 
 if ( ! function_exists( 'blm_basic_entry_meta' ) ) :
@@ -70,7 +67,6 @@ function blm_basic_entry_meta() {
 	}
 }
 endif;
-
 
 /**
  * Determine whether blog/site has more than one category.
@@ -116,8 +112,6 @@ function blm_basic_category_transient_flusher() {
 }
 add_action( 'edit_category', 'blm_basic_category_transient_flusher' );
 add_action( 'save_post',     'blm_basic_category_transient_flusher' );
-
-
 
 
 if ( ! function_exists( 'blm_basic_paging_nav' ) ) :
@@ -175,7 +169,6 @@ function blm_basic_paging_nav() {
 }
 endif;
 
-
 if ( ! function_exists( 'blm_custom_excerpt_more' ) && ! is_admin() ) :
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Read more' link.
@@ -193,6 +186,5 @@ function blm_custom_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'blm_custom_excerpt_more' );
 endif;
-
 
 ?>
