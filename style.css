@@ -294,25 +294,25 @@ td, th { padding: 3px 5px; }
 
 .comment-meta a { text-decoration: none; }
 
-.comment-list { border-top: 1px solid #eee; list-style: none; margin: 0; padding: 1.25em 0; }
+.comment__list { border-top: 1px solid #eee; list-style: none; margin: 0; padding: 1.25em 0; }
 
-.comment-list ul, .comment-list ol { padding: 0; }
+.comment__list ul, .comment__list ol { padding: 0; }
 
-.comment-list > li { border-bottom: 1px solid #eee; }
+.comment__list > li { border-bottom: 1px solid #eee; }
 
-.comment-list li { font-size: 14px; padding: 0.625em; margin: 0; }
+.comment__list li { font-size: 14px; padding: 0.625em; margin: 0; }
 
-.comment-list li p { margin: 0; padding: 0.625em 0; }
+.comment__list li p { margin: 0; padding: 0.625em 0; }
 
-.comment-list li li > li { border: none; }
+.comment__list li li > li { border: none; }
 
-.comment-list ul li { list-style: disc; }
+.comment__list ul li { list-style: disc; }
 
-.comment-list ol li { list-style: decimal; }
+.comment__list ol li { list-style: decimal; }
 
-.comment-list .children { list-style: none; margin: 0.625em 0.625em 0 1.25em; padding: 0; }
+.comment__list .children { list-style: none; margin: 0.625em 0.625em 0 1.25em; padding: 0; }
 
-.comment-list .children li { border-top: 1px solid #eee; list-style: none; padding-top: 5px; }
+.comment__list .children li { border-top: 1px solid #eee; list-style: none; padding-top: 5px; }
 
 .comment-respond { margin-top: 30px; }
 

@@ -11,7 +11,7 @@
 	text-decoration: none;
 }
 
-.comment-list {
+.comment__list {
 	border-top: 1px solid $color__border-default;
 	list-style: none;
 	margin: 0; 
@@ -36,13 +36,13 @@
 	}
 }
 
-.comment-list ul li{
+.comment__list ul li{
 	list-style: disc;
 }
-.comment-list ol li {
+.comment__list ol li {
 	list-style: decimal;
 }
-.comment-list .children {
+.comment__list .children {
 	list-style: none;
 	margin: 0.625em 0.625em 0 1.25em;
 	padding: 0;
