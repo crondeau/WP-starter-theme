@@ -88,6 +88,12 @@ a.link__more, a.comment-reply-link { text-decoration: none; }
 
 a.link__more:after, a.comment-reply-link:after { content: "\00bb"; padding-left: 5px; }
 
+a.button { background: #339966; border: 1px solid #339966; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; cursor: pointer; display: inline-block; font-size: 14px; padding: 5px 20px; text-decoration: none; text-transform: uppercase; }
+
+a.button:hover { background: #333; border-color: #333; }
+
+a.button:focus, a.button:active { border-color: #ccc; }
+
 h1, h2, h3, h4, h5, h6 { clear: both; color: #333; font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif; font-weight: 400; }
 
 h1 { font-size: 30px; margin: 0 0 20px; }
@@ -337,13 +343,7 @@ button, input, select, textarea { font-size: 100%; /* Corrects font size not bei
 
 select { max-width: 100%; }
 
-.button, button, input[type="button"], input[type="reset"], input[type="submit"] { background: #339966; border: 1px solid #339966; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */ font-size: 14px; line-height: 2; text-transform: uppercase; }
-
-.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background: #333; border-color: #333; }
-
-.button:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .button:active, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active { border-color: #ccc; }
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */ }
+button, input[type="button"], input[type="reset"], input[type="submit"] { background: #339966; border: 1px solid #339966; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */ font-size: 14px; line-height: 2; text-transform: uppercase; -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */ }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background: #333; -webkit-transition: 0.07s, ease-in; -moz-transition: 0.07s, ease-in; -ms-transition: 0.07s, ease-in; -o-transition: 0.07s, ease-in; transition: 0.07s, ease-in; }
 
