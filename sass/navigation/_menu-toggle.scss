@@ -6,9 +6,9 @@
 
 @media screen and (max-width: $phone-wide-landscape) {
     .main__nav--toggle {
-		background: $color__text-main;
+		background: $color__text;
 		border: none;
-		color: $color__link-background;
+		color: $color__link--background;
         display: inline-block;
 		font-family: $font__sans;
 		margin: 0;
@@ -18,7 +18,7 @@
 		width: 100%;
 		a, 
 		a:hover {
-			color: $color__link-background;
+			color: $color__link--background;
 			text-decoration: none;
 		}
 		&:before {

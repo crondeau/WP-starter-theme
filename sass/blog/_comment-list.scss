@@ -12,7 +12,7 @@
 }
 
 .comment__list {
-	border-top: 1px solid $color__border-default;
+	border-top: 1px solid $color__border;
 	list-style: none;
 	margin: 0; 
 	padding: 1.25em 0;
@@ -20,7 +20,7 @@
 		padding: 0;
 	}
 	> li {
-		border-bottom: 1px solid $color__border-default;
+		border-bottom: 1px solid $color__border;
 	}
 	li {
 		font-size: $font__size--small;
@@ -47,7 +47,7 @@
 	margin: 0.625em 0.625em 0 1.25em;
 	padding: 0;
 	li {
-		border-top: 1px solid $color__border-default;
+		border-top: 1px solid $color__border;
 		list-style: none;
 		padding-top: 5px;
 	}

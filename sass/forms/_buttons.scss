@@ -2,8 +2,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: $color__background-button;
-	border: 1px solid $color__border-button;
+	background: $color__background--button;
+	border: 1px solid $color__border--button;
 	@include border-radius(2px);
 	color: $white;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -12,7 +12,7 @@ input[type="submit"] {
 	text-transform: uppercase;
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
 	&:hover {
-		background: $color__background-button-hover;
+		background: $color__background--button-hover;
 		@include transition (.07s, ease-in);
 	}
 }

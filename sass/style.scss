@@ -28,30 +28,30 @@ $grey: #333;
 $light-grey: #eee;
 $silver: #ccc;
 
-$color__background-body: $white;
-$color__background-hr: $silver;
-$color__text-main: $black;
+$color__background--body: $white;
+$color__background--hr: $silver;
+$color__text: $black;
 $color__heading: $grey;
-$color__border-default: $light-grey;
+$color__border: $light-grey;
 
 // Links
-$color__link-background: $white;
+$color__link--background: $white;
 $color__link: $green;
-$color__link-visited: $green;
-$color__link-hover: $orange;
+$color__link--visited: $green;
+$color__link--hover: $orange;
 
 
 // Buttons
-$color__background-button: $green;
-$color__background-button-hover: $grey;
-$color__border-button: $green;
-$color__border-button-hover: $grey;
-$color__border-button-focus: $silver;
+$color__background--button: $green;
+$color__background--button-hover: $grey;
+$color__border--button: $green;
+$color__border--button-hover: $grey;
+$color__border--button-focus: $silver;
 
 // Inputs
-$color__text-input: $grey;
-$color__text-input-focus: $black;
-$color__border-input: $silver;
+$color__input: $grey;
+$color__input-focus: $black;
+$color__input--border: $silver;
 
 // Fonts
 $font__sans: "Helvetica Neue", Helvetica, Arial, sans-serif;

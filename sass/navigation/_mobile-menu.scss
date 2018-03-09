@@ -9,13 +9,13 @@
 			text-align: left;
 			li {
 				display: block;
-				border-top: 1px solid $color__border-default;
+				border-top: 1px solid $color__border;
 				a {
-					background: $color__text-main;
-					color: $color__link-background;
+					background: $color__text;
+					color: $color__link--background;
 					padding: 10px 20px;
 					&:hover{
-						background: rgba($color__text-main, 0.8);
+						background: rgba($color__text, 0.8);
 					}
 				}
 			}
@@ -47,16 +47,16 @@
 		.current-menu-item > a:hover,
 		.current_page_item > a:focus,
 		.current-menu-item > a:focus {
-		    background: $color__text-main;
-			color: $color__link-background;
+		    background: $color__text;
+			color: $color__link--background;
 		}
 		ul ul .current_page_parent,
 		.current_page_parent .current_page_item > a {
-		    background: $color__text-main;
-		   	color: $color__link-background;
+		    background: $color__text;
+		   	color: $color__link--background;
 			&:hover {
-			    background: rgba($color__text-main, 0.8);
-				color: $color__link-background;
+			    background: rgba($color__text, 0.8);
+				color: $color__link--background;
 			}
 		}
 	}

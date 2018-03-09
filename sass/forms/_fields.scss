@@ -26,8 +26,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
+	color: $color__input;
+	border: 1px solid $color__input--border;
 	@include border-radius(2px);
 	@include box-sizing(border-box);
 	font-size: $font__size--small;
@@ -35,7 +35,7 @@ textarea {
 	padding: 10px 5px;
 	-webkit-appearance: none;
 	&:focus {
-		color: $color__text-input-focus;
+		color: $color__input-focus;
 		@include transition (.07s, ease-in);
 	}
 }

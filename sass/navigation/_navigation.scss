@@ -9,26 +9,26 @@
 			display: inline-block;
 		    position: relative;
 			&:hover {
-			    color: $color__link-background;
+			    color: $color__link--background;
 			    background: $color__link;
 			}
 			&:hover ul {
 				display: block;
 			}
 			a {
-				color: $color__link-background;
+				color: $color__link--background;
 				display: block;
 				padding: 5px 20px;
 				text-decoration: none;
 				&:hover {
 					background: $color__link;
-					color: $color__link-background;
+					color: $color__link--background;
 				}
 			}
 		}
 	}
 	ul ul {
-		background: $color__link-background;
+		background: $color__link--background;
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 		display: none;
 		float: left;
@@ -42,12 +42,12 @@
 		    left: 100%;
 		}  
 		a { 
-			color: $color__text-main;
+			color: $color__text;
 			width: 200px; 
 			&:hover,
 			&:focus {
 			    background: $color__link;
-				color: $color__link-background;
+				color: $color__link--background;
 			}
 		}
 	}
@@ -59,15 +59,15 @@
 	.current_page_item > a:focus,
 	.current-menu-item > a:focus {
 	    background: $color__link;
-		color: $color__link-background;
+		color: $color__link--background;
 	}
 	ul ul .current_page_parent,
 	.current_page_parent .current_page_item > a {
-	    background: $color__link-background;
-	   	color: $color__text-main;
+	    background: $color__link--background;
+	   	color: $color__text;
 		&:hover {
 		    background: $color__link;
-			color: $color__link-background;
+			color: $color__link--background;
 		}
 	}
 }
