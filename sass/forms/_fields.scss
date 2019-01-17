@@ -35,7 +35,7 @@ textarea {
 	padding: 10px 5px;
 	-webkit-appearance: none;
 	&:focus {
-		color: $color__input-focus;
+		color: $color__input--focus;
 		@include transition (.07s, ease-in);
 	}
 }
