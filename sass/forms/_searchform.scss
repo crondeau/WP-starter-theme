@@ -9,10 +9,10 @@
 }
 
 .search__form--input {
-	@include border-radius(0);
+	border-radius: none;
 	width: 100%;
 }
 
 .search__form--submit {
-	@include border-radius(0);
+	border-radius: none;
 }

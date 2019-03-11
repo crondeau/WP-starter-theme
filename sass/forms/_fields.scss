@@ -28,7 +28,7 @@ input[type="search"],
 textarea {
 	color: $color__input;
 	border: 1px solid $color__input--border;
-	@include border-radius(2px);
+	border-radius: 2px;
 	@include box-sizing(border-box);
 	font-size: $font__size--small;
 	line-height: 1;

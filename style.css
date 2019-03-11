@@ -44,7 +44,7 @@ a img { border: 0; }
 /* Text meant only for screen readers */
 .screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
 
-.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus { background-color: #f1f1f1; -webkit-border-radius: 3px; border-radius: 3px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-weight: 700; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar */ }
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus { background-color: #f1f1f1; border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-weight: 700; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar */ }
 
 body, button, input, select, textarea { color: #404040; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
 
@@ -88,7 +88,7 @@ a.link__more, a.comment-reply-link { text-decoration: none; }
 
 a.link__more:after, a.comment-reply-link:after { content: "\00bb"; padding-left: 5px; }
 
-a.button { background: #339966; border: 1px solid #339966; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; cursor: pointer; display: inline-block; font-size: 14px; padding: 5px 20px; text-decoration: none; text-transform: uppercase; }
+a.button { background: #339966; border: 1px solid #339966; border-radius: 2px; color: #fff; cursor: pointer; display: inline-block; font-size: 14px; padding: 5px 20px; text-decoration: none; text-transform: uppercase; }
 
 a.button:hover { background: #333; border-color: #333; }
 
@@ -343,7 +343,7 @@ button, input, select, textarea { font-size: 100%; /* Corrects font size not bei
 
 select { max-width: 100%; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { background: #339966; border: 1px solid #339966; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ color: #fff; cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */ font-size: 14px; line-height: 2; text-transform: uppercase; -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */ }
+button, input[type="button"], input[type="reset"], input[type="submit"] { background: #339966; border: 1px solid #339966; border-radius: 2px; color: #fff; cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */ font-size: 14px; line-height: 2; text-transform: uppercase; -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */ }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background: #333; -webkit-transition: 0.07s, ease-in; -moz-transition: 0.07s, ease-in; -ms-transition: 0.07s, ease-in; -o-transition: 0.07s, ease-in; transition: 0.07s, ease-in; }
 
@@ -355,7 +355,7 @@ input[type="search"]::-webkit-search-decoration { /* Corrects inner padding disp
 
 button::-moz-focus-inner, input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */ border: 0; padding: 0; }
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { color: #333; border: 1px solid #ccc; -webkit-border-radius: 2px; border-radius: 2px; background-clip: padding-box; /* stops bg color from leaking outside the border: */ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; line-height: 1; padding: 10px 5px; -webkit-appearance: none; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea { color: #333; border: 1px solid #ccc; border-radius: 2px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 14px; line-height: 1; padding: 10px 5px; -webkit-appearance: none; }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { color: #404040; -webkit-transition: 0.07s, ease-in; -moz-transition: 0.07s, ease-in; -ms-transition: 0.07s, ease-in; -o-transition: 0.07s, ease-in; transition: 0.07s, ease-in; }
 
@@ -367,9 +367,9 @@ textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 
 .search__form label { -webkit-box-flex: 1; -webkit-flex: 1; -moz-box-flex: 1; -moz-flex: 1; -ms-flex: 1; flex: 1; }
 
-.search__form--input { -webkit-border-radius: 0; border-radius: 0; background-clip: padding-box; /* stops bg color from leaking outside the border: */ width: 100%; }
+.search__form--input { border-radius: none; width: 100%; }
 
-.search__form--submit { -webkit-border-radius: 0; border-radius: 0; background-clip: padding-box; /* stops bg color from leaking outside the border: */ }
+.search__form--submit { border-radius: none; }
 
 /* Make sure embeds and iframes fit their containers */
 embed, iframe, object { max-width: 100%; }
