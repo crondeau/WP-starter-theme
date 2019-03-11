@@ -7,6 +7,8 @@ textarea {
 	font-family: $font__sans;
 	font-size: $font__size--default;
 	line-height: $font__line-height-body;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing: antialiased;
 }
 
 p {
