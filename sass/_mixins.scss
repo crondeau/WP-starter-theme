@@ -53,6 +53,13 @@
   }
 }
 
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
 // Flexbox 
 //https://github.com/mastastealth/sass-flex-mixin/blob/master/_flex.scss
 @mixin flexbox {
