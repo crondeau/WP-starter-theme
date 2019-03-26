@@ -98,8 +98,6 @@ h1, h2, h3, h4, h5, h6 { clear: both; color: #333; font-family: "Droid Serif", G
 
 h1 { font-size: 30px; margin: 0 0 20px; }
 
-h1.site-title { margin: 0; }
-
 h2 { font-size: 22px; margin: 15px 0; }
 
 h2 a { text-decoration: none; }
