@@ -375,10 +375,10 @@ embed, iframe, object { max-width: 100%; }
 /* images within main page */
 .site__main img { height: auto; max-width: 100%; }
 
-.aligncenter, .alignleft, .alignright { display: block; margin: 0 auto; margin-top: 1em; margin-bottom: 1em; }
+.aligncenter, .alignleft, .alignright { display: block; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; }
 
-@media screen and (min-width: 37.5em) { .alignleft { float: left; margin: 0 1.5em 0 0; }
-  .alignright { float: right; margin: 0 0 0 1.5em; } }
+@media screen and (min-width: 37.5em) { .alignleft { float: left; margin: 0 30px 20px 0; }
+  .alignright { float: right; margin: 0 0 20px 30px; } }
 
 .wp-caption { background: #fff; border: solid 1px #eee; padding: 3px; margin-bottom: 20px; max-width: 100%; }
 

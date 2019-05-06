@@ -2,17 +2,17 @@
 .alignleft, 
 .alignright {
 	@include center-block;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 @media screen and (min-width: $phone-wide-landscape) {
 	.alignleft {
 		float: left;
-		margin: 0 1.5em 0 0;
+		margin: 0 30px 20px 0;
 	}
 	.alignright {
 		float: right;
-		margin: 0 0 0 1.5em;
+		margin: 0 0 20px 30px;
 	}
 }
