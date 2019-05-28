@@ -1,3 +1,24 @@
+.button {
+	background: $color__background--button;
+	border: 1px solid $color__border--button;
+	border-radius: 2px;
+	color: $white;
+	cursor: pointer; 
+	display: inline-block;
+	font-size: $font__size--small;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background: $color__background--button-hover;
+		border-color: $color__border--button-hover;
+	}
+	&:focus, 
+	&:active {
+		border-color: $color__border--button-focus;
+	}
+}
+
 a {
 	color: $color__link;
 	@include transition (0.2s, ease-in-out);
@@ -18,25 +39,5 @@ a {
 	}
 	&.comment-reply-link {
 		@extend .link__more;
-	}
-	&.button {
-		background: $color__background--button;
-		border: 1px solid $color__border--button;
-		border-radius: 2px;
-		color: $white;
-		cursor: pointer; 
-		display: inline-block;
-		font-size: $font__size--small;
-		padding: 5px 20px;
-		text-decoration: none;
-		text-transform: uppercase;
-		&:hover {
-			background: $color__background--button-hover;
-			border-color: $color__border--button-hover;
-		}
-		&:focus, 
-		&:active {
-			border-color: $color__border--button-focus;
-		}
 	}
 }
