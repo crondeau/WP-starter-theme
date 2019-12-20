@@ -9,20 +9,24 @@ get_header(); ?>
 
 <section class="site__main row">
 	<div class="container">
-
-		<main id="primary" class="content block__left">
 		
-			<?php if (have_posts()) : while (have_posts()) : the_post(); 
+		<div class="two__column--area">
+
+			<main id="primary" class="content">
+		
+				<?php if (have_posts()) : while (have_posts()) : the_post(); 
 				
-				get_template_part( 'content' ); 
+					get_template_part( 'content' ); 
 
-			endwhile; endif; ?>
+				endwhile; endif; ?>
 	
-			<?php blm_basic_paging_nav(); ?>
+				<?php blm_basic_paging_nav(); ?>
 			
-		</main><!-- #primary -->
+			</main><!-- #primary -->
 		
-		<?php get_sidebar(); ?>
+			<?php get_sidebar(); ?>
+		
+		</div><!-- .two__column--area -->
 		
 	</div><!-- .container -->
 </section><!-- .site__main -->

@@ -16,34 +16,36 @@
 }
 
 .site__main {
-	padding: 30px 2%;
+	padding: 30px 20px;
 	@media screen and (min-width: $max-width) {
 		padding: 30px 0;
 	}
 }
 
-.block__left {
-	float: left;
-}
-
-.block__right {
-	float: left;
-	@media screen and (min-width: $phone-wide-landscape) {
-		float: right;
+.two__column--area {
+	@include flexbox;
+	@include flex-wrap(wrap);
+	@include justify-content(space-between);
+	.content {	
+		width: 100%;	
+		@media screen and (min-width: $tablet-portrait) {
+			width: 55%;
+		}
+		@media screen and (min-width: $desktop-tiny) {
+			width:  65%;
+		}
+	}
+	.sidebar {
+		width: 100%;	
+		@media screen and (min-width: $tablet-portrait) {
+			width:  40%;
+		}
+		@media screen and (min-width: $desktop-tiny) {
+			width:  30%;
+		}
 	}
 }
 
-.content {	
-	width: 100%;	
-	@media screen and (min-width: $phone-wide-landscape) {
-		width: 65%;
-	}
-}
-.sidebar {
-	width: 100%;	
-	@media screen and (min-width: $phone-wide-landscape) {
-		width: 25%;
-	}
-}
+
 
 @import "_404";
