@@ -110,3 +110,10 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+//Remove Gutenberg styles
+// function custom_theme_assets() {
+//     wp_dequeue_style( 'wp-block-library' );
+// }
+//
+// add_action( 'wp_enqueue_scripts', 'custom_theme_assets', 100 );
