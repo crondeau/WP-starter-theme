@@ -70,7 +70,7 @@ require get_template_directory() . '/inc/widgets.php';
 function blm_basic_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
-	wp_enqueue_style('blm_googleFonts', '//fonts.googleapis.com/css?family=Droid+Serif' );
+	wp_enqueue_style('blm_googleFonts', '//fonts.googleapis.com/css?family=Inria+Serif&display=swap' );
 
 	wp_enqueue_script( 'blm_navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	
