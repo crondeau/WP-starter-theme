@@ -80,3 +80,33 @@ add_action( 'wp_enqueue_scripts', 'blm_basic_scripts' );
 
 // Custom post navigation and post meta for theme.
 require get_template_directory() . '/inc/template-tags.php';
+
+/*
+ * Remove Prefixes from archive title
+ */
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+	elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+	}
+	elseif ( is_author() ) {
+	        $title = '<span class="vcard">' . get_the_author() . '</span>';
+	}
+	elseif( is_tax() ) {
+		$tax = get_taxonomy( get_queried_object()->taxonomy );
+		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
+		$title = sprintf( __( '%2$s' ), $tax->labels->singular_name, single_term_title( '', false ) );
+	}
+	elseif ( is_year() ) {
+	    $title = sprintf( __( '%s' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) );
+	}
+	elseif ( is_month() ) {
+	    $title = sprintf( __( '%s' ), get_the_date( _x( 'F Y', 'monthly archives date format' ) ) );
+	}
+    return $title;
+
+});
