@@ -1,4 +1,5 @@
 .main__nav {
+	border: 1px solid orange;
 	ul {
 		@extend .no-padding-list;
 		text-align: center;

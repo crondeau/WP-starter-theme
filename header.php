@@ -24,24 +24,30 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'blm_basic' ); ?></a>
 
 	<header id="masthead" class="site__header row" role="banner">	
-		<div class="site__header--wrapper">	
+		<div class="container">
 		
-			<div id="branding" class="site__branding">
-			<?php if ( is_front_page() || is_home() ) : ?>
-				<h1 class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site__description"><?php bloginfo( 'description' ); ?></h2>
-			<?php else: ?>
-				<p class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
-				<p class="site__description"><?php bloginfo( 'description' ); ?></p>
-			<?php endif; ?>
-			</div>
+			<div class="site__header--wrapper">	
 		
-			<nav id="site__nav" class="site__nav main__nav" role="navigation">
-				<button class="main__nav--toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'blm_basic' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav>	
+				<div id="branding" class="site__branding">
+				<?php if ( is_front_page() || is_home() ) : ?>
+					<h1 class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+					<h2 class="site__description"><?php bloginfo( 'description' ); ?></h2>
+				<?php else: ?>
+					<p class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="site__description"><?php bloginfo( 'description' ); ?></p>
+				<?php endif; ?>
+				</div>
+			
+				<div id="nav" class="site__navigation">
+					<button class="menu__toggle"><?php _e( 'Menu', 'blm_basic' ); ?></button>
+					<nav id="site__nav" class="main__nav" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					</nav>
+				</div>
 
-		</div>	
+			</div>	
+			
+		</div>
 	</header>
 
 	<div id="content" class="site__content">

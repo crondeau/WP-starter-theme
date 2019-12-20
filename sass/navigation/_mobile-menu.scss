@@ -1,63 +1,70 @@
-@media screen and (max-width: $phone-wide-landscape) {
-    .main__nav.toggled .nav-menu {
-        display: block;
-    }
+@media screen and (max-width: $tablet-portrait) {
+	.custom-overflow {
+		overflow-y: hidden;
+	}
+	.main__nav.toggled {
+		right: 0;
+		.nav-menu, ul {
+	        display: block;
+			z-index: 100;
+	    }
+	}
     .main__nav {
+		background: $white;
+		border: none;
+		height: 97vh;
+		position: absolute;
+		right: -100%;
+		top: 0px;
+		width: 100%;
+		z-index: 99;
+		
+		.menu-main__nav-container {
+			overflow: auto;
+		}
 		ul {
 			display: none;
-			padding-left: 0;
+			padding: 30px;
 			text-align: left;
+			width: 100%;
+			z-index:100;
 			li {
 				display: block;
-				border-top: 1px solid $color__border;
+				width: 100%;
+				&:hover {
+				    color: inherit;
+				    background: transparent;
+				}
 				a {
-					background: $color__text;
-					color: $color__link--background;
-					padding: 10px 20px;
-					&:hover{
-						background: rgba($color__text, 0.8);
+					color: $color__text;
+					padding: 5px 10px;
+					border: none;
+					&:hover,
+					&:focus {
+					    background: $color__link;
+						color: $color__link--background;
 					}
 				}
 			}
-			ul, 
+			ul,
 			ul ul {
 				box-shadow: none;
 				position: relative;
 				top: inherit;
-				left: 0;
+				left: 0px;
 				display: block;
 				float: none;
 				width: 100%;
+				z-index: 100;
 				li {
-					border: none;
+					a {
+						padding: 5px 5px 10px 30px;
+						text-transform: none;
+						width: 100%;
+					}
+
 				}
-			}
-			ul a { 
-				padding-left: 40px;
-				width: 100%;
-			}
-			ul ul a {
-				padding-left: 60px;
-			}
-		}
-		.current_page_item > a,
-		.current-menu-item > a,
-		.current_page_ancestor > a,
-		.current_page_item > a:hover,
-		.current-menu-item > a:hover,
-		.current_page_item > a:focus,
-		.current-menu-item > a:focus {
-		    background: $color__text;
-			color: $color__link--background;
-		}
-		ul ul .current_page_parent,
-		.current_page_parent .current_page_item > a {
-		    background: $color__text;
-		   	color: $color__link--background;
-			&:hover {
-			    background: rgba($color__text, 0.8);
-				color: $color__link--background;
 			}
 		}
 	}
-} 
+}

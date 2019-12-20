@@ -1,34 +1,15 @@
-/**
- * navigation.js
- *
- * Handles toggling the navigation menu for small screens.
- */
-( function() {
-	var container, button, menu;
+jQuery(document).ready(function($){
 
-	container = document.getElementById( 'site__nav' );
-	if ( ! container )
-		return;
-
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button )
-		return;
-
-	menu = container.getElementsByTagName( 'ul' )[0];
-
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
+	function hide_menu(){
+		$(".menu__toggle, #site__nav").removeClass('toggled');
+		$('html').removeClass('custom-overflow');
 	}
 
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) )
-		menu.className += ' nav-menu';
+	$(".menu__toggle").click(function(e){
+		e.preventDefault();
+		$('#site__nav').toggleClass('toggled');
+		$('html').toggleClass('custom-overflow');
+		$(this).toggleClass('toggled');
+	});
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) )
-			container.className = container.className.replace( ' toggled', '' );
-		else
-			container.className += ' toggled';
-	};
-} )();
+});

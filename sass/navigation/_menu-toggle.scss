@@ -1,29 +1,37 @@
-.main__nav--toggle {
+.menu__toggle {
     cursor: pointer;
 	display: none;
-	padding: 10px;
+	z-index: 9999;
 }
 
-@media screen and (max-width: $phone-wide-landscape) {
-    .main__nav--toggle {
-		background: $color__text;
+@media screen and (max-width: $tablet-portrait) {
+    .menu__toggle {
+		background: url(images/hamburger.svg) no-repeat;
+		background-size: 28px 28px;
 		border: none;
-		color: $color__link--background;
-        display: inline-block;
-		font-family: $font__sans;
-		margin: 0;
-        text-decoration: none;
-		text-align: left;
-		text-transform: uppercase;
-		width: 100%;
-		a, 
-		a:hover {
-			color: $color__link--background;
-			text-decoration: none;
+		border-radius: 0;
+		display: block;
+		height: 28px;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		text-indent: -9999px;
+		width: 28px;
+		z-index: 9999;
+		&:hover {
+			background: url(images/hamburger.svg) no-repeat;
+			background-size: 28px 28px;
+			border: none;
+			color: transparent;
+			height: 28px;
+			width: 28px;
 		}
-		&:before {
-			content: '\2261';
-			margin-right: 10px;
+		&.toggled {
+			background: url(images/close.svg) no-repeat;
+	 		background-size: 28px 28px;
+			position: absolute;
+
 		}
     }
 }
